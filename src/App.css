@@ -8,7 +8,7 @@
   outline: none;
   overflow-x: hidden;
 }
-.leaflet-container {
+.mapbox-container {
   height: 800px;
   width: 100%;
 }

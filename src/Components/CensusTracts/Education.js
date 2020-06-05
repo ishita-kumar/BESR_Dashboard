@@ -21,7 +21,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     return (
       <div className="custom-tooltip" style={{ borderRadius: "10px" }}>
         <p className="label" style={{ color: "white" }}>Education Group: {label}</p>
-        <p className="label" style={{ color: "white" }}> Monroe County: {payload[0].value} %</p>
+        <p className="label" style={{ color: "white" }}> Monroe County: {payload[0].value} </p>
         <p className="intro" style={{ color: "white" }}>{getIntroOfPage(label)}</p>
 
       </div>

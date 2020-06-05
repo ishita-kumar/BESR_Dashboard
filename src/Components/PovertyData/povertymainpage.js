@@ -10,6 +10,23 @@ class povertyMainpage extends Component {
   render() {
     return (
       <div id="contents">
+               <div className="">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+
+                <a class="navbar-brand" href="#"><span className="color">Main Poverty Data</span></a>
+              </div>
+              <div style={{ position: "fixed", zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
+                <div class="form-group w-25">
+
+               
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        </div>  
         <section className="charts">
           <div className="container-fluid">
             <div className="row">

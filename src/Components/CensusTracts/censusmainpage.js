@@ -13,6 +13,7 @@ import data from '../../assets/censustract_education'
 
 class povertyMainpage extends Component {
   state = {
+    censusName: '',
     selectedOption: [
       {
         name: 'Less than high school', Tract: data.output[0].less_high_school,
@@ -41,6 +42,8 @@ class povertyMainpage extends Component {
 
 
   handleChange = ({ target }) => {
+
+    this.state.censusName = target.value
 
     let newData = []
 
@@ -105,18 +108,32 @@ class povertyMainpage extends Component {
   render() {
     return (
       <div id="contents">
-        <div style={{ position: "fixed", zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
-          <div class="form-group w-25">
+        <div className="">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
 
-            {/* <label for="exampleFormControlSelect1">Select Census</label> */}
-            <select class="form-control" id="exampleFormControlSelect1"
-              value={this.state.selectedOption}
-              onChange={this.handleChange}
-            >
-              {data.output.map(({ census }, index) => <option value={census} >{census}</option>)}
-            </select>
-          </div>
+                <a class="navbar-brand" href="#"><span className="color">Census Tracts Data</span></a>
+              </div>
+              <div style={{ position: "fixed", zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
+                <div class="form-group w-25">
+
+                  {/* <label for="exampleFormControlSelect1">Select Census</label> */}
+                  <select class="btn btn-secondary btn-lg dropdown-toggle" id="exampleFormControlSelect1" style={{"padding":"10px", "margin":"15px"}}
+                    value={this.state.censusName}
+                    onChange={this.handleChange}
+                  >
+                    {data.output.map(({ census }, index) => <option value={census} >{census}</option>)}
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </nav>
         </div>
+        <section class='statis text-center'>
+          <Median selectedmedian={this.state.medianval}></Median>
+        </section>
 
         <section className="charts">
           <div className="container-fluid">
@@ -125,9 +142,8 @@ class povertyMainpage extends Component {
                 <div className="chart-container">
                   {/* <h2 style={{ textAlign: "center" }}>By Gender</h2> */}
                   {/* <Gender></Gender> */}
-                  <h2 style={{ textAlign: "center" }}>Female Education Data</h2>
-                  <Education selectedCensus={this.state.selectedOption}></Education>
-                  {/* <Employment></Employment> */}
+                  <h2 style={{ textAlign: "center" }}>Age Statistsics</h2>
+                  <Agedata></Agedata>
                   <div>
 
                   </div>
@@ -137,15 +153,13 @@ class povertyMainpage extends Component {
               <div className="col-md-6">
                 <div className="chart-container">
                   <h2 style={{ textAlign: "center" }}>Male Education Data</h2>
-                  <Education selectedCensus={this.state.selectedOption}></Education>
+                  <Gender></Gender>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class='statis text-center'>
-          <Median selectedmedian={this.state.medianval}></Median>
-        </section>
+
         <section className="charts">
           <div className="container-fluid">
 
@@ -154,8 +168,9 @@ class povertyMainpage extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="chart-container">
-                  <h2 style={{ textAlign: "center" }}>Age Data</h2>
-                  <Agedata></Agedata>
+                  <h2 style={{ textAlign: "center" }}>Education Data</h2>
+                  <Education selectedCensus={this.state.selectedOption}></Education>
+
                   <div>
 
                   </div>
@@ -179,7 +194,7 @@ class povertyMainpage extends Component {
               <div className="col-md-6">
                 <div className="chart-container">
                   <h2 style={{ textAlign: "center" }}>By Gender</h2>
-                  <Gender></Gender>
+
                   {/* <Employment></Employment> */}
                   <div>
 

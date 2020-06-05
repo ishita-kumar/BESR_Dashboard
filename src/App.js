@@ -9,7 +9,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
-import Mainpage from "./Components/Mainpage"
+import Mainpage from "./Components/Map/Mainpage"
+import Homepage from "./Components/Homepage/homepage.js"
 import povertyMainpage from "./Components/PovertyData/povertymainpage"
 import CensusMainpage from "./Components/CensusTracts/censusmainpage"
 function App() {
@@ -29,11 +30,19 @@ function App() {
           <ul className="categories">
           <li>
           <FontAwesomeIcon icon={faCheckSquare} />
-              <Link to="/"> Dashboard</Link>
+              <Link to="/"> Homepage</Link>
+            </li>
+            <li>
+          <FontAwesomeIcon icon={faCheckSquare} />
+              <Link to="/Map"> Map</Link>
             </li>
             <li>
             <FontAwesomeIcon icon={faCalendar} />
-              <Link to="/povertydata"> Poverty Data</Link>
+              <Link to="/PovertyData"> Poverty Data</Link>
+            </li>
+            <li>
+            <FontAwesomeIcon icon={faCalendar} />
+              <Link to="/CensusTracts"> Census Tracts</Link>
             </li>
 
           </ul>
@@ -41,12 +50,14 @@ function App() {
         </aside>
       </div>
           <Switch>
-          <Route path="/" exact component={Mainpage }/>
-         
+          <Route path="/" exact component={Homepage }/>
+          <Route path="/Map" exact component={Mainpage }/>
+          
+          <Route path="/PovertyData" exact component={povertyMainpage }/>
           {/* <Mainpage className="statistics"></Mainpage> */}
         
          
-          <Route path="/povertydata" component={CensusMainpage}>
+          <Route path="/CensusTracts" component={CensusMainpage}>
         
           </Route>
          

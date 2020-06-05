@@ -7,7 +7,7 @@ let median = {
       },
       "tractfips": "Census Tract 1",
       "Median_Household_Income": "10452",
-      "Median_Family_Income": "NULL",
+      "Median_Family_Income": "0",
       "Median_Home_Value": "233700"
     },{
       "_id": {
@@ -16,15 +16,15 @@ let median = {
       "tractfips": "Census Tract 2.01",
       "Median_Household_Income": "19464",
       "Median_Family_Income": "20156",
-      "Median_Home_Value": "NULL"
+      "Median_Home_Value": "0"
     },{
       "_id": {
         "$oid": "5ed5ee04dbc2283d66ca3e93"
       },
       "tractfips": "Census Tract 2.02",
-      "Median_Household_Income": "NULL",
-      "Median_Family_Income": "NULL",
-      "Median_Home_Value": "NULL"
+      "Median_Household_Income": "0",
+      "Median_Family_Income": "0",
+      "Median_Home_Value": "0"
     },{
       "_id": {
         "$oid": "5ed5ee04dbc2283d66ca3e94"
@@ -248,7 +248,7 @@ let median = {
       "tractfips": "Census Tract 16",
       "Median_Household_Income": "14291",
       "Median_Family_Income": "68929",
-      "Median_Home_Value": "NULL"
+      "Median_Home_Value": "0"
     }
   ]
 

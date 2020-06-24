@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,LabelList
 } from 'recharts';
 import educationData from '../../assets/censustract_education'
 const getIntroOfPage = (label) => {
@@ -27,7 +27,6 @@ const CustomTooltip = ({ active, payload, label }) => {
       </div>
     );
   }
-
   return null;
 };
 
@@ -50,13 +49,15 @@ export default class Example extends PureComponent {
 
               <CartesianGrid strokeDasharray="3 3" />
 
-              <XAxis dataKey="name" tick={{ fill: 'white' }} />
-              <YAxis tick={{ fill: 'white' }} />
+              <XAxis dataKey="name" tick={{ fill: 'black' }} />
+              <YAxis tick={{ fill: 'black' }} />
               <Tooltip wrapperStyle={{ backgroundColor: "#21262F", borderRadius: "10px" }}
 
                 content={<CustomTooltip />} />
               <Legend />
               <Bar dataKey="Tract" fill="#8884d8" />
+              <LabelList content={this.props.selectedCensus}  position="top" />
+
             </BarChart>
           </ResponsiveContainer>
         </div>

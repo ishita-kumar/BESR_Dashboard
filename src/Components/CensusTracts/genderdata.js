@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector,ResponsiveContainer } from 'recharts';
-const data = [
-  { name: 'Male', value: 11.7, value2 :21.5, In:373394, Mo:13766},
-  { name: 'Female', value: 14.5, value2 :22.3, In:479.244,Mo:15079},
+// const data = [
+//   { name: 'Male', value: 11.7, value2 :21.5, In:373394, Mo:13766},
+//   { name: 'Female', value: 14.5, value2 :22.3, In:479.244,Mo:15079},
 
-];
+// ];
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
   const {
@@ -44,10 +44,8 @@ const renderActiveShape = (props) => {
       />
       <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />
       <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`In % IN ${value} %,MO ${value2} %`}</text>
-      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">
-        {`IN: ${In},Mo: ${Mo} `}
-      </text>
+      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`Total: ${value}`}</text>
+     
     </g>
   );
 };
@@ -81,7 +79,7 @@ export default class GenderData extends PureComponent {
         <Pie
           activeIndex={this.state.activeIndex}
           activeShape={renderActiveShape}
-          data={data}
+          data={this.props.selectgender}
           cx={280}
           cy={150}
           innerRadius={60}

@@ -4,6 +4,7 @@ import MyMapComponent from "./UsaMap";
 import Chart from "../Chart";
 import Tabu from "../tabs"
 import DynamicSelect from '../DynamicSelect';
+import { Link } from 'react-router-dom';
 class Mainpage extends Component {
 
   render() {
@@ -16,7 +17,7 @@ class Mainpage extends Component {
             <div class="container-fluid">
               <div class="navbar-header">
 
-                <a class="navbar-brand" href="#"><span className="color">Census Tracts Data</span></a>
+                <a class="navbar-brand" href="#"><h3 className="color">Unemployment Data within each tract in Monroe County</h3></a>
               </div>
               <div style={{ position: "fixed", zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
 
@@ -24,7 +25,31 @@ class Mainpage extends Component {
 
             </div>
           </nav>
+          <div class="welcome">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="content">
+                    <h2>Monroe County Tracts  </h2>
+                    <p>Check the Census tract you live in: <a href="https://www.census.gov/geographies/reference-maps/2010/geo/2010-census-tract-maps.html">here</a></p>
+                    <p>
+
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <section className="charts">
+            <div className="container-fluid">
+              <MyMapComponent ></MyMapComponent>
+
+            </div>
+          </section>
+
+          {/* <section className="charts">
             <div className="container-fluid">
               <div className="row">
                 <div className="col-md-9">
@@ -39,7 +64,7 @@ class Mainpage extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
 
         </div>

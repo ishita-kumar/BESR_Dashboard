@@ -11102,7 +11102,7 @@ class Map extends React.Component {
 
                                         </tr>
                                         <tr>
-                                            <th scope="col">Median Home Value</th>
+                                            <th scope="col">Median Home Income</th>
                                             <td> $<div id='tooltip-4'></div></td>
 
                                         </tr>

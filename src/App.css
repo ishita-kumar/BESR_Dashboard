@@ -23,23 +23,32 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-body {background-color: #d9d9d9}
+body {background-color: #eeeeee}
 #contents {
   position: relative;
   -webkit-transition: .3s;
   transition: .3s;
-  margin-left: 290px;
-  background-color: #d9d9d9;
+  margin-left: 190px;
+  background-color: #eeeeee;
 }
 .margin {
   margin-left: 0 !important;
 }
 /* Start side navigation bar  */
+.banner {
+  width: 100%;
+  height:40vh ;
+}
 
+
+.banner img {
+  height : 100%;
+  width: 100%;
+}
 .side-nav {
   float: left;
   height: 100%;
-  width: 290px;
+  width: 190px;
   background-color: #21262F;
   color: #CCC;
   -webkit-transform: translateX(0);

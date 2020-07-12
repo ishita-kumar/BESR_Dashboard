@@ -20,21 +20,21 @@ export default class aninumber extends Component {
           <div class="container-fluid">
          <div class="row" style={{padding:"40px"}}>
              <div class="col-md-3">
-            <div class="box " style={{"backgroundColor":"#d9534f"}}>
+            <div class="box " style={{"backgroundColor":"#C44444"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}>Monroe County Total Unemployment change</h3>
+              <h3 style={{"color":"#ffffff"}}> Unemployment change since 2019</h3>
               <p class="lead" style={{"color":"#ffffff"}}>
               <AnimatedNumber
               value={this.state.value}
-              formatValue={this.formatValue}
+              formatValue={this.formatValue} 
             />
             
               </p>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="box " style={{"backgroundColor":"#d9534f"}}>
+            <div class="box " style={{"backgroundColor":"#44C4C4"}}>
               <i class="fa fa-eye"></i>
               
               <h3 style={{"color":"#ffffff"}}>Percent change in Unemployment</h3>
@@ -42,13 +42,13 @@ export default class aninumber extends Component {
               <AnimatedNumber
               value={this.state.value1}
               formatValue={this.formatValue}
-            />
+            />%
             
               </p>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="box " style={{"backgroundColor":"#d9534f"}}>
+            <div class="box " style={{"backgroundColor":"#84C444"}}>
               <i class="fa fa-eye"></i>
               
               <h3 style={{"color":"#ffffff"}}>May 2020 Unemployment Rate</h3>
@@ -62,15 +62,15 @@ export default class aninumber extends Component {
             </div>
           </div>
           <div class="col-md-3">
-            <div class="box " style={{"backgroundColor":"#d9534f"}}>
+            <div class="box " style={{"backgroundColor":"#C48444"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}>Total Poverty Rate In Percetange</h3>
+              <h3 style={{"color":"#ffffff"}}> Poverty Rate in 2020</h3>
               <p class="lead" style={{"color":"#ffffff"}}>
               <AnimatedNumber
               value={this.state.value3}
               formatValue={this.formatValue}
-            />
+            />%
           
               </p>
             </div>

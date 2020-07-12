@@ -32,10 +32,10 @@ function App() {
           <FontAwesomeIcon icon={faCheckSquare} />
               <Link to="/"> Homepage</Link>
             </li>
-            <li>
+            {/* <li>
           <FontAwesomeIcon icon={faCheckSquare} />
               <Link to="/Map"> Map</Link>
-            </li>
+            </li> */}
             <li>
             <FontAwesomeIcon icon={faCalendar} />
               <Link to="/PovertyData"> Poverty Data</Link>

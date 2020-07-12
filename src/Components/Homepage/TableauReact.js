@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import TableauReport from 'tableau-react';
 
 const options = {
-    height: 1200,
-    width: 1500,
+  
     hideTabs: false,
     // All other vizCreate options are supported here, too
     // They are listed here: https://help.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm#vizcreateoptions_record
@@ -27,7 +26,7 @@ export default class TableauReact extends Component {
 
          
 <section className="charts">
-  <div className="container" style={{width:"relative"}}>
+  <div className="container">
         <TableauReport
         filters={filters}
         parameters={parameters}

@@ -229,6 +229,7 @@ body {background-color: #eeeeee}
   background-color: #4A5259;
   padding: 15px;
   overflow: hidden;
+  
 }
 .statistics .box > i {
   float: left;
@@ -269,41 +270,6 @@ body {background-color: #eeeeee}
   font-size: 17px;
 }
 
-/* Start users */
-
-.admins {
-  margin-top: 25px;
-}
-
-.admins .box > h3 {
-  color: #ccc;
-  font-family: Calibri;
-  font-weight: 300;
-  margin-top: 0;
-}
-.admins .box .admin {
-  margin-bottom: 20px;
-  overflow: hidden;
-  background-color: #4A5259;
-  padding: 10px;
-}
-.admins .box .admin .img {
-  width: 20%;
-  margin-right: 5%;
-  float: left;
-}
-.admins .box .admin .img img {
-  border-radius: 50%;
-}
-.admins .box .info {
-  width: 75%;
-  color: #EEE;
-  float: left;
-}
-.admins .box .info h3 {font-size: 19px}
-.admins .box .info p {color: #BBB}
-
-/* End users */
 /* Start statis */
 
 .statis {
@@ -311,10 +277,11 @@ body {background-color: #eeeeee}
   margin-top: 15px;
 }
 .statis .box {
+  min-height: 160px;
   position: relative;
   padding: 15px;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 15px;
   margin-bottom: 25px;
 }
 .statis .box h3:after {
@@ -339,7 +306,6 @@ body {background-color: #eeeeee}
   text-align: right;
   border-radius: 50%;
 }
-
 
 /*chart*/
 .chrt3 {

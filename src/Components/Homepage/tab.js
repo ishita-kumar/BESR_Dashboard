@@ -10,6 +10,10 @@ import Tableau from "./TableauReact";
 import MapPage from "../Map/Mainpage";
 import Iframe from "react-iframe";
 import Paper from '@material-ui/core/Paper';
+import PovertyMainpage from "../PovertyData/povertymainpage"
+import CensusMainpage from "../CensusTracts/censusmainpage"
+import banner from "../../assets/images/infection.png";
+
 
 
 function TabPanel(props) {
@@ -73,21 +77,31 @@ export default function SimpleTabs() {
     <Paper className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} className={classes.tabs} onChange={handleChange} aria-label="simple tabs example"  centered >
-          <Tab label="Economic Insights" {...a11yProps(0)} />
-          <Tab label="Census Tracts" {...a11yProps(1)} />
-          <Tab label="Covid Insights" {...a11yProps(2)} />
+          <Tab label="Key Insights" {...a11yProps(0)} />
+          <Tab label="Poverty Insights" {...a11yProps(1)} />
+          <Tab label="Map" {...a11yProps(2)} />
+          <Tab label="Census Tracts" {...a11yProps(3)} />
+          <Tab label="COVID Data" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
       <Tableau></Tableau>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={2}>
       <MapPage></MapPage>
       </TabPanel>
-      <TabPanel value={value} index={2}>
-      <div className="container" style={{ alignContent: "center" }}>
-              {" "}
-              <Iframe
+ 
+      <TabPanel value={value} index={1}>
+          <PovertyMainpage></PovertyMainpage>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+   <CensusMainpage></CensusMainpage>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+      <div className="container-fluid" style={{ alignContent: "center" }}>
+        <div className="row">
+          <div className="col-3">
+          <Iframe
                 url="https://covidactnow.org/embed/us/county/18105"
                 title="CoVid Act Now"
                 width="350"
@@ -95,8 +109,17 @@ export default function SimpleTabs() {
                 frameBorder="0"
                 scrolling="no"
               ></Iframe>
+          </div>
+          <div className="col-9">
+          <img style={{width: "100%", height: "auto"}} src={banner} />
+          </div>
+
+        </div>
+            
             </div>
       </TabPanel>
+
+    
     </Paper>
   );
 }

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,LabelList
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,LabelList,defs
 } from 'recharts';
 import educationData from '../../assets/censustract_education'
 const getIntroOfPage = (label) => {
@@ -38,6 +38,7 @@ export default class Example extends PureComponent {
       <div>
         <div style={{ width: '100%', height: 400 }}>
           <ResponsiveContainer>
+           
             <BarChart
               width={500}
               height={300}
@@ -46,7 +47,16 @@ export default class Example extends PureComponent {
                 top: 5, right: 30, left: 20, bottom: 5,
               }}
             >
-
+  <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#0652C5" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#D4418E" stopOpacity={0}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+    </linearGradient>
+  </defs>
               <CartesianGrid strokeDasharray="3 3" />
 
               <XAxis dataKey="name" tick={{ fill: 'black' }} />
@@ -55,7 +65,7 @@ export default class Example extends PureComponent {
 
                 content={<CustomTooltip />} />
               <Legend />
-              <Bar dataKey="Tract" fill="#8884d8" />
+              <Bar dataKey="Tract" fill="url(#colorUv)" />
               <LabelList content={this.props.selectedCensus}  position="top" />
 
             </BarChart>

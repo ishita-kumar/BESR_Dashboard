@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList,defs
 } from 'recharts';
 
 // return (
@@ -57,6 +57,16 @@ export default class Example extends PureComponent {
               }}
             >
 
+<defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="10%" stopColor="#8884d8  " stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#3f4c6b" stopOpacity={0.8}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+    </linearGradient>
+  </defs>
               <CartesianGrid strokeDasharray="3 3" />
 
               <XAxis dataKey="name" />
@@ -65,7 +75,7 @@ export default class Example extends PureComponent {
 
                 content={<CustomTooltip />} />
               <Legend />
-              <Bar dataKey="Tract" fill="#8884d8" />
+              <Bar dataKey="Tract" fill="url(#colorUv)" />
 
             </BarChart>
           </ResponsiveContainer>

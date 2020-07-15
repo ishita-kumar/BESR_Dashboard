@@ -10,46 +10,26 @@ class povertyMainpage extends Component {
   render() {
     return (
       <div id="contents">
-        <div className="">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-
-                <a class="navbar-brand" href="#"><span className="color">Poverty Data for Indiana State and Monroe County</span></a>
-              </div>
-              <div style={{ position: "fixed", zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
-                <div class="form-group w-25">
-
-
-                </div>
-              </div>
-
-            </div>
-          </nav>
-        </div>
+       
         <div class="welcome">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
                 <div class="content">
-                  <h2>Poverty Data of Indiana State vs Monroe County</h2>
+                  <h2> <strong>Poverty Data of Indiana State vs Monroe County</strong> </h2>
      
-                  <p>
-
-                  </p>
-
 
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <section className="charts" style={{"color":"black"}}>
+        <section className="charts" >
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-6">
-                <div className="chart-container" >
-                  <h2 style={{ textAlign: "center" }}>Age Data</h2>
+                <div className="chart-container"  style={{"color":"black"}}>
+                  <h2 style={{ textAlign: "center" }}>Povert by Age</h2>
                   <Agedata></Agedata>
                   <div>
 
@@ -60,7 +40,7 @@ class povertyMainpage extends Component {
               <div className="col-md-6">
                 <div className="chart-container " style={{"color":"black"}}>
 
-                  <h2 style={{ textAlign: "center" }}>Work Experience</h2>
+                  <h2 style={{ textAlign: "center" }}>Poverty by Work Experience</h2>
                   <WorkExperience></WorkExperience>
                 </div>
               </div>
@@ -73,7 +53,7 @@ class povertyMainpage extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="chart-container">
-                  <h2 style={{ textAlign: "center" }}>By Gender</h2>
+                  <h2 style={{ textAlign: "center" }}>Poverty by Gender</h2>
                   <Gender></Gender>
                   {/* <Employment></Employment> */}
                   <div>
@@ -99,7 +79,7 @@ class povertyMainpage extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="chart-container" style={{"color":"black"}}>
-                  <h2 style={{ textAlign: "center" }}>Employment By Gender</h2>
+                  <h2 style={{ textAlign: "center" }}>Poverty by Employment and Gender</h2>
                   {/* <Gender></Gender> */}
                   <Employment></Employment>
                   <div>
@@ -110,7 +90,7 @@ class povertyMainpage extends Component {
               </div>
               <div className="col-md-6">
                 <div className="chart-container" style={{"color":"black"}}>
-                  <h2 style={{ textAlign: "center" }}>Education Data</h2>
+                  <h2 style={{ textAlign: "center" }}>Povert by Education</h2>
                   <Education></Education>
                 </div>
               </div>

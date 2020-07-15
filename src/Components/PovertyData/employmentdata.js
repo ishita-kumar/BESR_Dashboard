@@ -31,10 +31,10 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active) {
     return (
       <div className="custom-tooltip" style={{borderRadius:"10px"}}>
-        <p className="label" style={{color:"white"}}>Employment Group: {label}</p>
-        <p className="label" style={{color:"white"}}> Indiana State: {payload[1].value} %</p>
-        <p className="label" style={{color:"white"}}> Monroe County: {payload[0].value} %</p>
-        <p className="intro" style={{color:"white"}}>{getIntroOfPage(label)}</p>
+        <p className="label" >Employment Group: {label}</p>
+        <p className="label"> Indiana State: {payload[1].value} %</p>
+        <p className="label" > Monroe County: {payload[0].value} %</p>
+        <p className="intro" >{getIntroOfPage(label)}</p>
      
       </div>
     );
@@ -62,7 +62,7 @@ export default class Example extends PureComponent {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
-        <Tooltip  wrapperStyle={{ backgroundColor: "#21262F", borderRadius:"10px"}}
+        <Tooltip  wrapperStyle={{ backgroundColor: "#DCDCDC", opacity: "0.5",borderRadius:"10px"}}
        
        content={<CustomTooltip />} />
         <Legend />

@@ -186,50 +186,26 @@ class povertyMainpage extends Component {
   render() {
     return (
       <div id="contents">
-        <div className="">
-          <nav class="navbar navbar-default" style={{ position: "fixed", zIndex: 2, width: "100%",}}>
-            <div style={{width: "100%"}}>
-              
-                <div class="row">
-                  <div class="col-6 col-lg-6 ">
-
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><span className="color">Pick a Census Tract for Information</span></a>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                  <div style={{  zIndex: 1000, width: "100%", display: "flex", justifyContent: "center" }}>
-                <div class="form-group">
-
-                  {/* <label for="exampleFormControlSelect1">Select Census</label> */}
-                  <select class="btn btn-secondary btn-lg dropdown-toggle" id="exampleFormControlSelect1" style={{ "padding": "10px", "margin": "15px" }}
-                    value={this.state.censusName}
-                    onChange={this.handleChange}
-                  >
-                    {data.output.map(({ census }, index) => <option value={census} >{census}</option>)}
-                  </select>
-                </div>
-              </div>
-                  </div>
-                  <div class="col-3">
-                  {/* <Pdf targetRef={ref} filename="Census Data.pdf">
-                {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
-              </Pdf> */}
-                  </div>
-                </div>
-              
-              
-            </div>
-          </nav>
-        </div>
-        <div class="welcome mt-5 pt-5">
+      
+        <div class="welcome">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
                 <div class="content">
-                  <h2>Each census tract In monroe county</h2>
+                  {/* <h2>Each census tract In monroe county</h2>
                   <p>Check the Census tract you live in: <a href="https://www.census.gov/geographies/reference-maps/2010/geo/2010-census-tract-maps.html">here</a></p>
+                  */}
+                  <div class="form-group"> 
 
+{/* <label for="exampleFormControlSelect1">Select Census</label> */}
+<h2>Pick A Census Tract</h2>
+<select class="btn btn-secondary btn-lg dropdown-toggle" id="exampleFormControlSelect1" style={{ "padding": "10px", "margin": "15px" }}
+  value={this.state.censusName}
+  onChange={this.handleChange}
+>
+  {data.output.map(({ census }, index) => <option value={census} >{census}</option>)}
+</select>
+</div>
                 </div>
               </div>
             </div>

@@ -99,7 +99,7 @@ export default function SimpleTabs() {
     <Paper className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} className={classes.tabs} onChange={handleChange} aria-label="simple tabs example"  centered >
-          <Tab label="Key Insights" {...a11yProps(0)} ></Tab>/>
+          <Tab label="Key Insights" {...a11yProps(0)} ></Tab>
           <Tab label="Poverty Insights" {...a11yProps(1)} />
           <Tab label="Map" {...a11yProps(2)} />
           <Tab label="Census Tracts" {...a11yProps(3)} />

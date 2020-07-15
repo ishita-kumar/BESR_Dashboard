@@ -56,7 +56,7 @@ export default class mainstuff extends Component {
     
             <h1> Major Indicators </h1>
             <h3 style={{ textAlign: "left" }}>
-                   Here are few indicators for Monroe County  
+                  
                   </h3>
             <Stats></Stats>
           </section>

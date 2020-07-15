@@ -59,6 +59,16 @@ export default class Example extends PureComponent {
           top: 20, right: 30, left: 20, bottom: 5,
         }}
       >
+        <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="5%" stopColor="#516395" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#614385" stopOpacity={0.8}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#868F96 " stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#596164" stopOpacity={0.8}/>
+    </linearGradient>
+  </defs>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
@@ -66,10 +76,10 @@ export default class Example extends PureComponent {
        
        content={<CustomTooltip />} />
         <Legend />
-        <Bar dataKey="Male_Indiana" stackId="a" fill="#8884d8" />
-        <Bar dataKey="Female_Indiana" stackId="a" fill="#82ca9d" />
-        <Bar dataKey="Male_Monroe" stackId="b" fill="#8884d8" />
-        <Bar dataKey="Female_Monroe" stackId="b" fill="#82ca9d" />
+        <Bar dataKey="Male_Indiana" stackId="a" fill="url(#colorUv)" />
+        <Bar dataKey="Female_Indiana" stackId="a" fill="url(#colorPv)" />
+        <Bar dataKey="Male_Monroe" stackId="b" fill="url(#colorUv)" />
+        <Bar dataKey="Female_Monroe" stackId="b" fill="url(#colorPv)" />
       </BarChart>
       </ResponsiveContainer>
         </div>

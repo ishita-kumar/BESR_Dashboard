@@ -107,7 +107,8 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <div className="info">
+        <div className="container" style={{display: "flex",
+  alignItems: "left"}}>
         <button className='button_no_dec'
           onClick={createNotification('info')}><InfoIcon></InfoIcon>
         </button>

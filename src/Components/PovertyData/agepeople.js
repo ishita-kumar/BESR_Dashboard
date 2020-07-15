@@ -11,7 +11,10 @@ const data = [
         name: '5-17', Indiana: 17.3, Monroe: 11.5, amt: 1506,
     },
     {
-        name: '18-34', Indiana: 17, Monroe: 42.6, amt: 989,
+      name: '18-24', Indiana: 48.4, Monroe: 78.6, amt: 989,
+  },
+    {
+        name: '25-34', Indiana: 17.9, Monroe: 22.6, amt: 989,
     },
     {
         name: '35-64', Indiana: 10.1, Monroe: 11.7, amt: 1228,
@@ -36,8 +39,12 @@ const getIntroOfPage = (label) => {
       ;
     } if (label === '5-17') {
       return "Indiana State: 1,93,865, Monroe County: 1,891";
-    } if (label === '18-34') {
-      return "Indiana State: 2,43,548, Monroe County: 19,975";
+    }
+    if (label === '18-24') {
+      return "Indiana State: 70,06,026, Monroe County: 20,230";
+    }
+     if (label === '25-34') {
+      return "Indiana State: 131,12,396, Monroe County: 8.675";
     } if (label === '35-64') {
       return 'Indiana State: 2,53,544, Monroe County: 5,134';
     } if (label === '<64') {
@@ -80,6 +87,16 @@ export default class Example extends PureComponent {
         }}
       >
           
+<defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="5%" stopColor="#516395" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#614385" stopOpacity={0.8}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#868F96 " stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#596164" stopOpacity={0.8}/>
+    </linearGradient>
+  </defs>
         <CartesianGrid strokeDasharray="3 3" />
         
         <XAxis dataKey="name" />
@@ -88,8 +105,8 @@ export default class Example extends PureComponent {
        
         content={<CustomTooltip />} />
         <Legend />
-        <Bar dataKey="Monroe" fill="#8884d8" />
-        <Bar dataKey="Indiana" fill="#82ca9d" />
+        <Bar dataKey="Monroe" fill="url(#colorUv)"/>
+        <Bar dataKey="Indiana" fill="url(#colorPv)" />
       </BarChart>
           </ResponsiveContainer>
           </div>

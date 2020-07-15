@@ -12,7 +12,6 @@ import {
 const getIntroOfPage = (label) => {
   if (label === '>5') {
     return "Indiana State: 81,505,Monroe County: 1,119"
-
       ;
   } if (label === '5-17') {
     return " Total: 1,891";
@@ -59,8 +58,8 @@ export default class Example extends PureComponent {
 
 <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="10%" stopColor="#8884d8  " stopOpacity={0.8}/>
-      <stop offset="95%" stopColor="#3f4c6b" stopOpacity={0.8}/>
+    <stop offset="5%" stopColor="#516395" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#614385" stopOpacity={0.8}/>
     </linearGradient>
     <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
       <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>

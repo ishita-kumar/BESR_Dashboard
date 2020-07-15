@@ -78,6 +78,17 @@ export default class GenderData extends PureComponent {
       <ResponsiveContainer>
       
       <PieChart width={400} height={400}>
+        
+      <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="5%" stopColor="#516395" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#614385" stopOpacity={0.8}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#868F96 " stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#596164" stopOpacity={0.8}/>
+    </linearGradient>
+  </defs>
         <Pie
           activeIndex={this.state.activeIndex}
           activeShape={renderActiveShape}
@@ -86,7 +97,7 @@ export default class GenderData extends PureComponent {
           cy={150}
           innerRadius={60}
           outerRadius={80}
-          fill="#8884d8"
+          fill="url(#colorUv)"
           dataKey="value"
           onMouseEnter={this.onPieEnter}
         />

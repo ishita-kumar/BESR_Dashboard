@@ -20,9 +20,9 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active) {
     return (
       <div className="custom-tooltip" style={{ borderRadius: "10px" }}>
-        <p className="label" style={{ color: "white" }}>Education Group: {label}</p>
-        <p className="label" style={{ color: "white" }}> Monroe County: {payload[0].value} </p>
-        <p className="intro" style={{ color: "white" }}>{getIntroOfPage(label)}</p>
+        <p className="label">Education Group: {label}</p>
+        <p className="label"> Monroe County: {payload[0].value} </p>
+        <p className="intro">{getIntroOfPage(label)}</p>
 
       </div>
     );
@@ -49,8 +49,8 @@ export default class Example extends PureComponent {
             >
   <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="5%" stopColor="#0652C5" stopOpacity={0.8}/>
-      <stop offset="95%" stopColor="#D4418E" stopOpacity={0}/>
+      <stop offset="5%" stopColor="#009245 " stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#FCEE21" stopOpacity={0}/>
     </linearGradient>
     <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
       <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
@@ -61,7 +61,7 @@ export default class Example extends PureComponent {
 
               <XAxis dataKey="name" tick={{ fill: 'black' }} />
               <YAxis tick={{ fill: 'black' }} />
-              <Tooltip wrapperStyle={{ backgroundColor: "#21262F", borderRadius: "10px" }}
+              <Tooltip wrapperStyle={{ backgroundColor: "#DCDCDC", opacity: "0.5",borderRadius:"10px"}}
 
                 content={<CustomTooltip />} />
               <Legend />

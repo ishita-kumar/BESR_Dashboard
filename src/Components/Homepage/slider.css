@@ -43,6 +43,12 @@ background-image: image("./ass");
     padding: 0 2em;
   }
   
+  .button_no_dec
+{ outline: none !important;
+  border: 0;
+  padding:0;
+  box-shadow: none !important;
+}
   .et-slidemap h1 {
     font-size: 40px;
     margin: 0;

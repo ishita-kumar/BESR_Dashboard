@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import "./slider.css";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -8,17 +9,18 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Tableau from "./TableauReact";
 import MapPage from "../Map/Mainpage";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 import Iframe from "react-iframe";
 import Paper from '@material-ui/core/Paper';
 import PovertyMainpage from "../PovertyData/povertymainpage"
 import CensusMainpage from "../CensusTracts/censusmainpage"
 import banner from "../../assets/images/infection.png";
-
-
+import InfoIcon from '@material-ui/icons/Info';
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
 
+  const { children, value, index, ...other } = props;
   return (
     <div
       role="tabpanel"
@@ -66,6 +68,26 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SimpleTabs() {
+  const createNotification = (type) => {
+    return () => {
+      switch (type) {
+        case 'info':
+          NotificationManager.info('Info message');
+          break;
+        case 'success':
+          NotificationManager.success('Success message', 'Title here');
+          break;
+        case 'warning':
+          NotificationManager.warning('Warning message', 'Close after 3000ms', 3000);
+          break;
+        case 'error':
+          NotificationManager.error('Error message', 'Click me!', 5000, () => {
+            alert('callback');
+          });
+          break;
+      }
+    };
+  };
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -77,7 +99,7 @@ export default function SimpleTabs() {
     <Paper className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} className={classes.tabs} onChange={handleChange} aria-label="simple tabs example"  centered >
-          <Tab label="Key Insights" {...a11yProps(0)} />
+          <Tab label="Key Insights" {...a11yProps(0)} ></Tab>/>
           <Tab label="Poverty Insights" {...a11yProps(1)} />
           <Tab label="Map" {...a11yProps(2)} />
           <Tab label="Census Tracts" {...a11yProps(3)} />
@@ -85,12 +107,20 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-      <Tableau></Tableau>
+        <div className="info">
+        <button className='button_no_dec'
+          onClick={createNotification('info')}><InfoIcon></InfoIcon>
+        </button>
+        <Tableau></Tableau>
+        </div>
+     
+ 
       </TabPanel>
       <TabPanel value={value} index={2}>
       <MapPage></MapPage>
       </TabPanel>
- 
+      <NotificationContainer/>
+
       <TabPanel value={value} index={1}>
           <PovertyMainpage></PovertyMainpage>
       </TabPanel>
@@ -119,7 +149,6 @@ export default function SimpleTabs() {
             </div>
       </TabPanel>
 
-    
     </Paper>
   );
 }

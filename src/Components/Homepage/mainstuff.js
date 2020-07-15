@@ -5,7 +5,6 @@ import $ from "jquery";
 import Stats from "./numbersstats";
 import banner from "../../assets/images/banner2.png";
 import Tabs from "./tab";
-
 import SplitText from "react-pose-text";
 const charPoses = {
   exit: { opacity: 0, y: 20 },
@@ -17,6 +16,7 @@ const charPoses = {
 };
 
 export default class mainstuff extends Component {
+  
   render() {
     return (
       <div>
@@ -52,9 +52,11 @@ export default class mainstuff extends Component {
 
         <main>
           <section class="et-slidemap" id="tab-es6">
+        
+    
             <h1> Major Indicators </h1>
             <h3 style={{ textAlign: "left" }}>
-                   Here are few indicators for Monroe County 
+                   Here are few indicators for Monroe County  
                   </h3>
             <Stats></Stats>
           </section>

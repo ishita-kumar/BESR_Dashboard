@@ -24,7 +24,7 @@ export default class mainstuff extends Component {
           <div className="row">
             <div className="textBloomington">
               <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
-                Recover Bloomington
+                Recover Bloomington..........
               </SplitText>
             </div>
           </div>

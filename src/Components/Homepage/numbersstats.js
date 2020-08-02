@@ -3,10 +3,10 @@ import AnimatedNumber from "animated-number-react";
 
 export default class aninumber extends Component {
     state = {
-        value: 4022,
-        value1:5.8,
-        value2:7.8,
-        value3:  24.7
+        value: 591,
+        value1:0.9,
+        value2:9.0,
+        value3:  151.55
 
       };
    
@@ -23,7 +23,7 @@ export default class aninumber extends Component {
             <div class="box " style={{"backgroundColor":"#84C444"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}>May 2020 Unemployment Rate</h3>
+              <h3 style={{"color":"#ffffff"}}>June 2020 Unemployment Rate</h3>
               <p class="lead" style={{"color":"#ffffff"}}>
               <AnimatedNumber
               value={this.state.value2}
@@ -37,9 +37,9 @@ export default class aninumber extends Component {
             <div class="box " style={{"backgroundColor":"#C44444"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}> Unemployment change since 2019</h3>
+              <h3 style={{"color":"#ffffff"}}> Employment change from 2019</h3>
               <p class="lead" style={{"color":"#ffffff"}}>
-             + <AnimatedNumber
+             - <AnimatedNumber
               value={this.state.value}
               formatValue={this.formatValue} 
             />
@@ -51,9 +51,9 @@ export default class aninumber extends Component {
             <div class="box " style={{"backgroundColor":"#44C4C4"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}>Percent change in Unemployment</h3>
+              <h3 style={{"color":"#ffffff"}}>Percent Employment change from 2019</h3>
               <p class="lead" style={{"color":"#ffffff"}}>
-              <AnimatedNumber
+              -<AnimatedNumber
               value={this.state.value1}
               formatValue={this.formatValue}
             />%
@@ -67,7 +67,7 @@ export default class aninumber extends Component {
             <div class="box " style={{"backgroundColor":"#C48444"}}>
               <i class="fa fa-eye"></i>
               
-              <h3 style={{"color":"#ffffff"}}> Poverty Rate change since 2019</h3>
+              <h3 style={{"color":"#ffffff"}}> Percent Unemployment Change from 2019</h3>
               <p class="lead" style={{"color":"#ffffff"}} > 
               <AnimatedNumber
               value={this.state.value3}

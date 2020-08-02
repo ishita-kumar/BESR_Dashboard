@@ -14,7 +14,7 @@ class homepage extends Component {
       <div id="contents">
         <div >
           <Slider></Slider>
-          {/* <img src={banner} /> */}
+        
          
         </div>
       </div>

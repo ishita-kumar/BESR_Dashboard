@@ -18,6 +18,7 @@
     "jquery": "^3.5.1",
     "leaflet": "^1.6.0",
     "mapbox-gl": "^1.10.1",
+    "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",

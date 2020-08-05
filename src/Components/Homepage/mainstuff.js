@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./slider.css";
+import Navbar from "./Navbar.js"
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
 import Stats from "./numbersstats";
@@ -22,9 +23,7 @@ export default class mainstuff extends Component {
     return (
       <div>
         <div>
-
-
-
+       < Navbar></Navbar>
         </div>
         <main>
           <section class="et-slidemap" id="tab-es6">

@@ -22,10 +22,47 @@ export default class mainstuff extends Component {
     return (
       <div>
         <div>
+        <section class="et-hero-tabs">
+          <div className="row">
 
+            <div className="container">
+
+              <h1>Recover Bloomington</h1>
+            </div>
+            
+
+          </div>
+          <div className="containerdu"></div>
+          <div
+            class="et-hero-tabs-container sticky"
+            
+            style={{ backdropFilter: "blur(15px)", background: "#21262f52" }}
+          >
+
+
+            <a class="et-hero-tab" href="#tab-es6">
+              Indicators
+            </a>
+            <a class="et-hero-tab" href="#tab-flexbox">
+              Recovery
+            </a>
+            <a class="et-hero-tab" href="#tab-react">
+              Statistics
+            </a>
+            <a class="et-hero-tab" href="#tab-angular">
+              Resources{" "}
+            </a>
+            <span class="et-hero-tab-slider"></span>
+          </div>
+
+        </section>
 
 
         </div>
+
+
+    
+
         <main>
           <section class="et-slidemap" id="tab-es6">
             <h1> Major Indicators </h1>

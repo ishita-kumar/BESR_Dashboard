@@ -12,8 +12,6 @@ import { faCalendar, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import Mainpage from "../Components/Mainpage"
 import povertyMainpage from "../Components/PovertyData/povertymainpage"
 
-
-
 class Navbar extends Component {
 
   render() {

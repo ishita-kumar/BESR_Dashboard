@@ -14,11 +14,63 @@ export default class aninumber extends Component {
       render() {
         return (
           <div>
-                  <section class='statis text-center'>
-          
-      
+                  <section class=' text-center'>     
           <div class="container-fluid">
-         <div class="row" style={{padding:"40px"}}>
+
+          <div class="container" style={{padding:"40px"}}>
+		<div class="row">
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-code" aria-hidden="true"></i>
+			  <AnimatedNumber
+              value={this.state.value2}
+              formatValue={this.formatValue}
+            /> %
+           &#8593;  {"  "}
+           <hr></hr>
+				<h5>June 2020 Unemployment Rate</h5>
+			</div>
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-check" aria-hidden="true"></i>
+     
+        - <AnimatedNumber
+              value={this.state.value}
+              formatValue={this.formatValue} 
+            />
+        <hr></hr>
+				<h5> Employment change from 2019</h5>
+			</div>
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-user" aria-hidden="true"></i>
+        -<AnimatedNumber
+              value={this.state.value1}
+              formatValue={this.formatValue}
+            />%
+            &#8593;  {"  "}
+            <hr></hr>
+				<h5>Percent Employment change from 2019</h5>
+			</div>
+   
+			<div class="col-lg-3 stats">
+				<i class="fa fa-coffee" aria-hidden="true"></i>
+			  <AnimatedNumber
+              value={this.state.value3}
+              formatValue={this.formatValue}
+            />%
+            &#8593;  {"  "}
+            <hr></hr>
+          
+				<h5>Percent Unemployment Change from 2019</h5>
+			</div>
+
+
+		</div>
+
+	</div>
+
+         {/* <div class="row">
          <div class="col-md-3">
             <div class="box " style={{"backgroundColor":"#84C444"}}>
               <i class="fa fa-eye"></i>
@@ -78,7 +130,7 @@ export default class aninumber extends Component {
               </p>
             </div>
           </div>
-          </div>
+          </div> */}
           </div>
           </section>
          

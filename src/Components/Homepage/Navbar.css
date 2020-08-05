@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .navigation {
   height: 90px;
-  background: #E5E5E5;
+  background: #FFFFFF;
 }
 
 .brand {
@@ -40,7 +40,7 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #E5E5E5;
+  background: #FFFFFF;
   color: #262626;
   text-decoration: none;
 }

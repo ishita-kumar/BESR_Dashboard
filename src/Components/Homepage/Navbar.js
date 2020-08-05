@@ -8,7 +8,7 @@ export default class Navbar extends Component {
                 <section class="navigation ">
   <div class="nav-container">
     <div class="brand">
-      <a href="#!">Logo</a>
+      <a href="#!">Recover Monroe</a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>

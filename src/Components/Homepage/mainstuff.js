@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./slider.css";
-import Navbar from "./Navbar.js"
+import Navbar from "./Navbar.js";
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
 import Stats from "./numbersstats";
 import banner from "../../assets/images/banner2.png";
 import Tabs from "./tab";
-import ParticlesBg from 'particles-bg'
-import Download from "./Downloadpdf"
+import ParticlesBg from "particles-bg";
+import Download from "./Downloadpdf";
 import SplitText from "react-pose-text";
 const charPoses = {
   exit: { opacity: 0, y: 20 },
@@ -23,74 +23,27 @@ export default class mainstuff extends Component {
     return (
       <div>
         <div>
-       < Navbar></Navbar>
+          <Navbar></Navbar>
         </div>
-        <main>
-          <section class="et-slidemap" id="tab-es6">
-            <h1> Major Indicators </h1>
-            <h3 style={{ textAlign: "left" }}></h3>
+        <div style={{ backgroundColor: "#F0F0F0" }}>
+          <section>
+            <div
+              className="container-fluid"
+              style={{ paddingLeft: "60px", paddingTop: "60px" }}
+            >
+              <h1>MAJOR INDICATORS</h1>
+              <h3>
+                Summary of the economic impact of COVID-19, Monroe County, IN
+              </h3>
+            </div>
 
             <Stats></Stats>
           </section>
+        </div>
 
-          <section class="et-slidemap" id="tab-react">
-            <h1>Recovery Updates</h1>
-            <div class="container-fluid">
-              <div class="row" style={{ padding: "40px" }}>
-                <div class="col-md-12">
-                  <h3 style={{ textAlign: "left" }}>
-                    COVID’s effects on the local economy are not ending anytime
-                    soon. This website provides insights on multiple metrics
-                    that can show the extent of the impact as well as the people
-                    and industries most likely affected.
-                  </h3>
-
-                  <h3>
-                    <strong>
-                      {" "}
-                      One compelling metric is the monthly unemployment rate.     {" "}
-                    </strong>
-                     Unemployment is the highest it’s been since the 2008
-                    recession. The months of March through June have seen the
-                    highest unemployment in the past 20 years.{" "}
-                  </h3>
-
-                  <h3>
-                    <strong>
-                      We can see more detail when looking at the weekly claims
-                      filed for unemployment benefits.
-                    </strong>{" "}
-                    Accommodation and food service workers were the first and
-                    hardest hit, with more than 2,000 claims filed in the first
-                    quarter of 2020. Many other sectors, such as health care and
-                    social assistance and retail trade, are also struggling.
-                    These sectors, along with education and manufacturing, were
-                    the largest employers in 2018.
-                  </h3>
-
-                  <h3>
-                    <strong>
-                      Mobility data tracks how much people got out and about,
-                      shared in Google mobility trend reports.
-                    </strong>{" "}
-                    These show that people continued (albeit at a lower rate) to
-                    go to the grocery and pharmacy, but retail, restaurants and
-                    workplaces continue to see fewer trips. However, the number
-                    of trips to parks and recreation areas has actually risen.
-                    These mobility trends can help us see economic activity but
-                    can also point us to issues around the spread of Covid.
-                  </h3>
-                  <h3>
-                    These and other metrics can all be viewed within this
-                    dashboard - we hope you find it useful!
-                  </h3>
-                  <h3></h3>
-                </div>
-              </div>
-            </div>
-          </section>
+        <main>
           <section class="et-slidemap" id="tab-angular">
-            <h1> Insights </h1>
+            <h1> Statistics </h1>
             <div class="container-fluid" style={{ padding: "40px" }}>
               <Tabs></Tabs>
             </div>
@@ -99,31 +52,32 @@ export default class mainstuff extends Component {
           <section class="et-slidemap" id="tab-angular">
             <div class="container-fluid" style={{ padding: "40px" }}></div>
           </section>
-        
-            <section class="et-slide" id="tab-angular">
-              <div id="contact" class="footer">
-                <div class="container">
-                  <h1> Resources </h1>
-                  <p class="footer-left">
-                  <Download></Download>                    <br />
-Get reports here                  </p>
-                  <p class="footer-right">
-                    Right aligned text here
-                    <br />
-                    Next line here
-                  </p>
-                  <p class="footer-centered">
-                    Center Text here
-                    <br />
-                    Next line here
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </section>
-     
-        </main>
 
+          <section class="et-slide" id="tab-angular">
+            <div id="contact" class="footer">
+              <div class="container">
+                <p class="footer-left">
+                  {/* <Download></Download>                    <br /> */}
+                  Copyright © 2020,
+                  <a href="https://ctil.iu.edu/" style={{ color: "black" }}>
+                    Crisis Technologies Innovation Lab, Indiana University
+                  </a>
+                  <br />
+                  MIT LICENSE
+                </p>
+
+                <h3 class="footer-right">
+                  <br />
+                </h3>
+                <h3 class="footer-centered">
+                  AFFILIATIONS
+                  <br />
+                </h3>
+                <br />
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
     );
   }

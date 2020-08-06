@@ -57,11 +57,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#eee",
   },
   tabs:{
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: "#D9D9D9",
     border: 0,
     borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
+    boxShadow: '0 3px 5px 2px rgba(	0, 91, 148, .3)',
+    color: 'black',
     height: 48,
     padding: '0 30px',
   }
@@ -97,16 +97,16 @@ export default function SimpleTabs() {
 
   return (
     <Paper className={classes.root}>
-      <AppBar position="static">
-        <Tabs value={value} className={classes.tabs} onChange={handleChange} aria-label="simple tabs example"  centered >
-          <Tab label="Key Insights" {...a11yProps(0)} ></Tab>
-          <Tab label="Poverty Insights" {...a11yProps(1)} />
-          <Tab label="Map" {...a11yProps(2)} />
-          <Tab label="Census Tracts" {...a11yProps(3)} />
-          <Tab label="COVID Data" {...a11yProps(4)} />
+      <AppBar position="">
+        <Tabs value={value} className={classes.tabs} onChange={handleChange}  centered >
+          <Tab label="Povert Insights" {...a11yProps(0)} ></Tab>
+          {/* <Tab label="Poverty Insights" {...a11yProps(1)} /> */}
+          <Tab label="Map" {...a11yProps(1)} />
+          <Tab label="Census Tracts" {...a11yProps(2)} />
+          <Tab label="COVID Data" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      {/* <TabPanel value={value} index={0}>
         <div className="container" style={{display: "flex",
   alignItems: "left"}}>
         <button className='button_no_dec'
@@ -114,21 +114,20 @@ export default function SimpleTabs() {
         </button>
         <Tableau></Tableau>
         </div>
-     
- 
+      </TabPanel> */}
+      <TabPanel value={value} index={0}>
+          <PovertyMainpage></PovertyMainpage>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
       <MapPage></MapPage>
       </TabPanel>
       <NotificationContainer/>
 
-      <TabPanel value={value} index={1}>
-          <PovertyMainpage></PovertyMainpage>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
+   
+      <TabPanel value={value} index={2}>
    <CensusMainpage></CensusMainpage>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={3}>
       <div className="container-fluid" style={{ alignContent: "center" }}>
         <div className="row">
           <div className="col-3">

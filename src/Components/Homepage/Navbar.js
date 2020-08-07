@@ -8,20 +8,23 @@ export default class Navbar extends Component {
                 <section class="navigation ">
   <div class="nav-container">
     <div class="brand">
-      <a href="#!">Recover Monroe</a>
+      <a href="">Recover Monroe</a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a  href="#tab-es6">Home</a>
+          <a  href="#tab-es6">Indicators</a>
         </li>
         <li>
-          <a  href="#tab-es6">About</a>
+          <a  href="#tab-es6">Statistics</a>
         </li>
      
         <li>
-          <a href="#tab-es6">Pricing</a>
+          <a href="#tab-es6">Updates</a>
+        </li>
+        <li>
+          <a href="#tab-es6">Resources</a>
         </li>
     
       

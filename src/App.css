@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Roboto";
   outline: none;
   overflow-x: hidden;
 }
@@ -32,6 +32,52 @@ body {
   background-color: #eeeeee;
 }
 
+.heading{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+font-variant: small-caps;
+
+color: #504747;
+
+}
+.indicators{
+  font-size: 18px;
+  text-align: center;
+margin-top:20px ;
+color: #005B94;
+}
+.indicatornumber{
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+margin-top: -20px;
+/* line-height: 40px; */
+
+/* identical to box height */
+
+
+color: #504747;
+
+}
+.maincomponent{
+  padding-Left: 180px;
+   padding-Top: 60px;
+   padding-Bottom: 60px;
+
+}
+.subheading{
+  
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+
+color: #504747;
+}
 .CTIL{
   /* float: right; */
   top: 5px;
@@ -293,7 +339,7 @@ section#counter-stats {
   text-align: center;
   font-size: 35px;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto";
 }
 
 .stats .fa {

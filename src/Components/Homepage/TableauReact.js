@@ -22,7 +22,7 @@ export default class TableauReact extends Component {
     render() {
         return (
             <div>
-                  <div id="contents">
+                  <div id="">
 
          
 <section className="charts" style={{backgroundColor:"#FFFFFF"}}>

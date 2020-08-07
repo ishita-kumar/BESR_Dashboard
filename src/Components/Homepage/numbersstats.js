@@ -27,7 +27,7 @@ export default class aninumber extends Component {
               formatValue={this.formatValue}
             /> %
            &#8593;  {"  "}
-           <hr></hr>
+           <hr className="hrred"></hr>
 				<h5>June 2020 Unemployment Rate</h5>
 			</div>
 
@@ -38,7 +38,7 @@ export default class aninumber extends Component {
               value={this.state.value}
               formatValue={this.formatValue} 
             />
-        <hr></hr>
+        <hr className="hrgreen"></hr>
 				<h5> Employment change from 2019</h5>
 			</div>
 
@@ -49,7 +49,7 @@ export default class aninumber extends Component {
               formatValue={this.formatValue}
             />%
             &#8593;  {"  "}
-            <hr></hr>
+            <hr className="hryellow"></hr>
 				<h5>Percent Employment change from 2019</h5>
 			</div>
    
@@ -60,7 +60,7 @@ export default class aninumber extends Component {
               formatValue={this.formatValue}
             />%
             &#8593;  {"  "}
-            <hr></hr>
+            <hr className="hrpurple"></hr>
           
 				<h5>Percent Unemployment Change from 2019</h5>
 			</div>

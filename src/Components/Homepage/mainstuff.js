@@ -41,19 +41,6 @@ export default class mainstuff extends Component {
             <Stats></Stats>
           </section>
         </div>
-        <div style={{ backgroundColor: "#FFFFFF" }}>
-          <section>
-            <div
-              className="container-fluid"
-              style={{ paddingLeft: "60px", paddingTop: "60px" }}
-            >
-              <h1>TABLEAU VISUALIZATIONS</h1>
-              <h3></h3>
-            </div>
-
-            <Tableau></Tableau>
-          </section>
-        </div>
 
         <div style={{ backgroundColor: "#FFFFFF" }}>
           <section class="" id="tab-angular">
@@ -71,69 +58,130 @@ export default class mainstuff extends Component {
             </div>
           </section>
         </div>
+        <div style={{ backgroundColor: "#FFFFFF",paddingBottom:"60px" }}>
+          <section>
+            <div
+              className="container-fluid"
+              style={{ paddingLeft: "60px", paddingTop: "60px", paddingBottom:"60px" }}
+            >
+              <h3>TABLEAU VISUALIZATIONS</h3>
+              <h3></h3>
+            </div>
+
+            <Tableau></Tableau>
+          </section>
+        </div>
+
         <div style={{ backgroundColor: "#F0F0F0" }}>
-         
-         <div
-           className="container-fluid"
-           style={{ paddingLeft: "60px", paddingTop: "60px" }}
-         >
-           <h1>RECOVERY UPDATES</h1>
-           <div class="container-fluid">
-  
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card mb-6">
-        <div class="card-header" style={{backgroundColor:"#005B94"}}>
-        Updated: 8/3/2020
+               <div
+              className="container-fluid"
+              style={{ paddingLeft: "60px", paddingTop: "60px" }}
+            >
+             <h1>RECOVERY UPDATES</h1>
+            <h3>Our intepretation of the data.</h3>
+            </div>
+            
+            <div class="container-fluid" >
+              <div class="row">
+                <div class="col-auto mb-3">
+                  <div class="card mb-6" style={{width: "35rem",marginLeft:"80px", marginRight:"80px"}} >
+                    <div
+                      class="card-header"
+                      style={{ backgroundColor: "#005B94" ,textAlign:"center", fontWeight:"bold"}}
+                    >
+                      Updated: 8/3/2020
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" style={{ textAlign: "center" }}>
+                        Whats New
+                      </h5>
+                      <p class="card-text">
+                        COVID’s effects on the local economy are not ending
+                        anytime soon. This website provides insights on multiple
+                        metrics that can show the extent of the impact as well
+                        as the people and industries most likely affected. One
+                        compelling metric is the monthly unemployment
+                        rate.Unemployment is the highest it’s been since the
+                        2008 recession. The months of March through June have
+                        seen the highest unemployment in the past 20 years. We
+                        can see more detail when looking at the weekly claims
+                        filed for unemployment benefits. Accommodation and food
+                        service workers were the first and hardest hit, with
+                        more than 2,000 claims filed in the first quarter of
+                        2020. Many other sectors, such as healthcare and social
+                        assistance and retail trade are also struggling. These
+                        sectors, along with education and manufacturing, were
+                        the largest employers in 2018. Mobility data tracks how
+                        much people got out and about, shared in Google mobility
+                        trend reports. These show that people continued (albeit
+                        at a lower rate) to go to the grocery and pharmacy, but
+                        retail, restaurants and workplaces continue to see fewer
+                        trips. However, the number of trips to parks and
+                        recreation areas has actually risen. These mobility
+                        trends can help us see economic activity but can also
+                        point us to issues around the spread of Covid. These and
+                        other metrics can all be viewed within this dashboard -
+                        we hope you find it useful!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-auto mb-3">
+                  <div class="card mb-6"  style={{width: "35rem",marginLeft:"80px", marginRight:"80px"}}>
+                    <div
+                      class="card-header"
+                      style={{ backgroundColor: "#EA941A" }}
+                    >
+                      Explore Newsletter
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" style={{ textAlign: "center" }}>
+                        {" "}
+                      </h5>
+                      <p class="card-text">
+                        NewsLetter
+                        <hr></hr>
+                        June NewsLetter
+                        <hr></hr>
+                        July NewsLetter August
+                        <hr></hr>
+                        NewsLetter
+                        <hr></hr>
+                        June
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+          <div class="container-fluid" style={{ padding: "40px" }}></div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title" style={{textAlign:"center"}}>Whats New</h5>
-          <p class="card-text">COVID’s effects on the local economy are not ending anytime soon. This website provides insights on multiple metrics that can show the extent of the impact as well as the people and industries most likely affected.
-
-One compelling metric is the monthly unemployment rate.Unemployment is the highest it’s been since the 2008 recession. The months of March through June have seen the highest unemployment in the past 20 years.
-
-We can see more detail when looking at the weekly claims filed for unemployment benefits. Accommodation and food service workers were the first and hardest hit, with more than 2,000 claims filed in the first quarter of 2020. Many other sectors, such as healthcare and social assistance and retail trade are also struggling. These sectors, along with education and manufacturing, were the largest employers in 2018.
-
-Mobility data tracks how much people got out and about, shared in Google mobility trend reports. These show that people continued (albeit at a lower rate) to go to the grocery and pharmacy, but retail, restaurants and workplaces continue to see fewer trips. However, the number of trips to parks and recreation areas has actually risen. These mobility trends can help us see economic activity but can also point us to issues around the spread of Covid.
-
-These and other metrics can all be viewed within this dashboard - we hope you find it useful!</p>
-       
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3" style={{alignContent:"right"}}>
-      <div class="card mb-6">
-        <div class="card-header" style={{backgroundColor:"#EA941A"}}>
-        Explore Newsletter
-        </div>
-        <div class="card-body">
-          <h5 class="card-title" style={{textAlign:"center"}}> </h5>
-          <p class="card-text">
-          NewsLetter June
-       NewsLetter July
-       NewsLetter August
-       NewsLetter June
-          </p>
-
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-         </div>
-         <div class="container-fluid" style={{ padding: "40px" }}>
-           
-         </div>
-      
-     </div>
-        <div style={{ backgroundColor: "#FFFFFF" }}>
+        <div style={{ backgroundColor: "#FFFFFF" ,padding: "40px"}}>
           <div
             className="container-fluid"
             style={{ paddingLeft: "60px", paddingTop: "60px" }}
           >
             <h1>RESOURCES</h1>
-            <h3></h3>
+            <div class="col-auto mb-3">
+                  <div class="card mb-6"  style={{ marginRight:"80px",border: "none"}}>
+                 
+                    <div class="card-body">
+                      <h5 class="card-title" style={{ textAlign: "center" }}>
+                        {" "}
+                      </h5>
+                      <p class="card-text">
+                      01.  Rebuilding in Times of Crisis
+                        <hr></hr>
+                        02.  Planning with a Risk Assessment and Hazard Analysis Framework
+                        <hr></hr>
+                        03.  The Future of Work for a Modern Economy
+                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
           </div>
           <div class="container-fluid" style={{ padding: "40px" }}></div>
         </div>
@@ -152,6 +200,7 @@ These and other metrics can all be viewed within this dashboard - we hope you fi
 
             <h3 class="footer-right">
               <br />
+              <span className="CTIL">CTIL</span>
             </h3>
             <h3 class="footer-centered">
               AFFILIATIONS

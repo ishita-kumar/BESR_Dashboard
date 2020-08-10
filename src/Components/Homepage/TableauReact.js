@@ -21,7 +21,7 @@ export default class TableauReact extends Component {
     return (
       <div>
         <div id="">
-          <section className="charts" style={{ backgroundColor: "#FFFFFF" }}>
+          <section className="charts">
             <div className="container">
               <TableauReport
                 filters={filters}

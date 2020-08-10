@@ -1,92 +1,104 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import AnimatedNumber from "animated-number-react";
 
 export default class aninumber extends Component {
-    state = {
-        value: 591,
-        value1:0.9,
-        value2:9.0,
-        value3:  151.55
+  state = {
+    value: 591,
+    value1: 0.9,
+    value2: 9.0,
+    value3: 151.55,
+  };
 
-      };
-   
-      formatValue = (value) => value.toFixed(1);
-      render() {
-        return (
-          <div>
-                  <section class=' text-center'>     
+  formatValue = (value) => value.toFixed(1);
+  render() {
+    return (
+      <div>
+        <section class=" text-center">
           <div class="container-fluid">
+            <div class="container" style={{ padding: "40px" }}>
+              <div class="row" style={{ backgroundColor: "white" }}>
+                <div
+                  class="col-lg-3 stats "
+                  style={{ border: " 1px solid #D9D9D9" }}
+                >
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  <h5 className="indicators">Rate of Unemployment</h5>
+                  <h5 className="indicators">June 2020</h5>
+                  <hr className="hrred"></hr>
+                  <h3 className="indicatornumber">
+                 
+                    <AnimatedNumber
+                      value={this.state.value2}
+                      formatValue={this.formatValue}
+                    /> %
+                    <span style={{color:"red"}}> &#8593;</span>
+                  
+                  </h3>
+                </div>
 
-          <div class="container" style={{padding:"40px"}}>
-		<div class="row" style={{backgroundColor:"white"}}>
+                <div
+                  class="col-lg-3 stats"
+                  style={{ border: " 1px solid #D9D9D9" }}
+                >
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <h5 className="indicators">Employment change</h5>
+                   <h5 className="indicators">from 2019 to 2020</h5>
+                  <hr className="hrgreen"></hr>
+                  <h3 className="indicatornumber">
+                    -
+                    <AnimatedNumber
+                      value={this.state.value}
+                      formatValue={this.formatValue}
+                    />
+                  </h3>
+                </div>
 
-			<div class="col-lg-3 stats " style={{ border:" 1px solid #D9D9D9"}}>
-				<i class="fa fa-code" aria-hidden="true"></i>
-        <h5 className="indicators">June 2020 Rate of Unemployment</h5>
-        <hr className="hrred"></hr>
-        <h3 className="indicatornumber">  <AnimatedNumber
-              value={this.state.value2}
-              formatValue={this.formatValue}
-             
-            /> %
-           &#8593;  {"  "}
-          
-				</h3>
-			 
-			</div>
+                <div
+                  class="col-lg-3 stats"
+                  style={{ border: " 1px solid #D9D9D9" }}
+                >
+                  <i class="fa fa-user" aria-hidden="true"></i>
 
-			<div class="col-lg-3 stats" style={{ border:" 1px solid #D9D9D9"}}>
-				<i class="fa fa-check" aria-hidden="true"></i>
-       
-				<h5 className="indicators"> Employment change from 2019 to 2020</h5>
-        <hr className="hrgreen"></hr>
-        <h3 className="indicatornumber">
-        - <AnimatedNumber
-              value={this.state.value}
-              formatValue={this.formatValue} 
-            />
-            </h3>
-      			</div>
+                  <h5 className="indicators">
+                    Percent Employment
+                  </h5>
+                  <h5 className="indicators">change from 2019</h5>
+                  <hr className="hryellow"></hr>
+                  <h3 className="indicatornumber">
+                    -
+                    <AnimatedNumber
+                      value={this.state.value1}
+                      formatValue={this.formatValue}
+                      className="indicatornumber"
+                    />
+                    %  <span style={{color:"red"}}> &#8593;</span>
+                  </h3>
+                </div>
 
-			<div class="col-lg-3 stats" style={{ border:" 1px solid #D9D9D9"}}>
-				<i class="fa fa-user" aria-hidden="true"></i>
-       
-				<h5 className="indicators">Percent Employment change from 2019</h5>
-        <hr className="hryellow"></hr>
-        <h3 className="indicatornumber">
-        -<AnimatedNumber
-              value={this.state.value1}
-              formatValue={this.formatValue}
-              className="indicatornumber"
-            />%
-            &#8593;  {"  "}
-            </h3>
-			</div>
-   
-			<div class="col-lg-3 stats" style={{ border:" 1px solid #D9D9D9"}}>
-				<i class="fa fa-coffee" aria-hidden="true"></i>
-        <h5 className="indicators">Percent Unemployment Change from 2019</h5>
-        <hr className="hrpurple"></hr>
-        <h3 className="indicatornumber">
+                <div
+                  class="col-lg-3 stats"
+                  style={{ border: " 1px solid #D9D9D9" }}
+                >
+                  <i class="fa fa-coffee" aria-hidden="true"></i>
+                  <h5 className="indicators">
+                    Percent Unemployment
+                  </h5>
+                  <h5 className="indicators">Change from 2019
+                  </h5>
+                  <hr className="hrpurple"></hr>
+                  <h3 className="indicatornumber">
+                    <AnimatedNumber
+                      value={this.state.value3}
+                      formatValue={this.formatValue}
+                      className="indicatornumber"
+                    />
+                    %  <span style={{color:"red"}}> &#8593;</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
 
-			  <AnimatedNumber
-              value={this.state.value3}
-              formatValue={this.formatValue}
-              className="indicatornumber"
-            />%
-            &#8593;  {"  "}
-            </h3>
-          
-          
-			
-			</div>
-
-
-		</div>
-
-	</div>
-
-         {/* <div class="row">
+            {/* <div class="row">
          <div class="col-md-3">
             <div class="box " style={{"backgroundColor":"#84C444"}}>
               <i class="fa fa-eye"></i>
@@ -148,10 +160,8 @@ export default class aninumber extends Component {
           </div>
           </div> */}
           </div>
-          </section>
-         
-          </div>
-        );
-      }
+        </section>
+      </div>
+    );
+  }
 }
-

@@ -9,7 +9,7 @@
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: 35px;
+  /* line-height: 35px; */
   text-transform: uppercase;
   font-size: 1.4em;
   font-family: Roboto;
@@ -59,7 +59,7 @@ nav ul li a:visited {
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
-line-height: 23px;
+/* line-height: 23px; */
 color: #003963;
   text-decoration: none;
 }

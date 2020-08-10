@@ -99,14 +99,15 @@ export default function SimpleTabs() {
     <Paper className={classes.root}>
       <AppBar position="">
         <Tabs value={value} className={classes.tabs} onChange={handleChange}  centered >
-          <Tab label="Povert Insights" {...a11yProps(0)} ></Tab>
-          {/* <Tab label="Poverty Insights" {...a11yProps(1)} /> */}
-          <Tab label="Map" {...a11yProps(1)} />
+        <Tab label="Tableau" {...a11yProps(0)} />
+          <Tab label="Povert Insights" {...a11yProps(1)} ></Tab>
           <Tab label="Census Tracts" {...a11yProps(2)} />
-          <Tab label="COVID Data" {...a11yProps(3)} />
+          <Tab label="Map" {...a11yProps(3)} />
+          
+          <Tab label="COVID Data" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
-      {/* <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={0}>
         <div className="container" style={{display: "flex",
   alignItems: "left"}}>
         <button className='button_no_dec'
@@ -114,20 +115,21 @@ export default function SimpleTabs() {
         </button>
         <Tableau></Tableau>
         </div>
-      </TabPanel> */}
-      <TabPanel value={value} index={0}>
-          <PovertyMainpage></PovertyMainpage>
       </TabPanel>
       <TabPanel value={value} index={1}>
+          <PovertyMainpage></PovertyMainpage>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+   <CensusMainpage></CensusMainpage>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
       <MapPage></MapPage>
       </TabPanel>
       <NotificationContainer/>
 
    
-      <TabPanel value={value} index={2}>
-   <CensusMainpage></CensusMainpage>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
+
+      <TabPanel value={value} index={4}>
       <div className="container-fluid" style={{ alignContent: "center" }}>
         <div className="row">
           <div className="col-3">

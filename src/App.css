@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Roboto";
   outline: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .mapbox-container {
   height: 800px;
@@ -61,6 +61,13 @@ margin-top: -20px;
 
 color: #504747;
 
+}
+
+.iconlogo{
+  content: '';
+  display: block;
+  height: 40px;  /*height of icon */
+  width: 40px;  /*width of icon */
 }
 .maincomponent{
   padding-Left: 180px;
@@ -483,6 +490,10 @@ section#counter-stats {
   border-top: 1px solid #A90533;
   margin: 1em 0;
   padding: 0;
+}
+.hrorange{
+  border-top: 1px solid #EA941A;
+
 }
 .hryellow {
   display: block;

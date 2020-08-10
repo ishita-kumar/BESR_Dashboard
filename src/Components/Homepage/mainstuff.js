@@ -10,6 +10,7 @@ import Tableau from "./TableauReact";
 import ParticlesBg from "particles-bg";
 import Download from "./Downloadpdf";
 import SplitText from "react-pose-text";
+import IULogo from "../../assets/images/iu.jpg" 
 const charPoses = {
   exit: { opacity: 0, y: 20 },
   enter: {
@@ -100,6 +101,7 @@ export default class mainstuff extends Component {
                       backgroundColor: "#005B94",
                       textAlign: "center",
                       fontWeight: "bold",
+                      color:"white"
                     }}
                   >
                     Updated: 8/3/2020
@@ -228,13 +230,29 @@ export default class mainstuff extends Component {
             </p>
 
             <h3 class="footer-right">
-             
-              <span className="CTIL">CTIL</span>
+             <div className="row">
+             <div className="col-auto mb-3">
+               <img className="iconlogo" src={IULogo}></img>
+               </div>
+               <div className="col-auto mb-3">
+               <span className="CTIL"> CTIL</span>
+               </div>
+               <div className="col-auto mb-3">
+               <span className="CTIL"> IBRC</span>
+               </div>
+               <div className="col-auto mb-3">
+               <span className="CTIL"> BEDC</span>
+               </div>
+               
+             </div>
+          
+           
             </h3>
             <h3 class="footer-centered">
               AFFILIATIONS
               <br />
             </h3>
+           
             <br />
           </div>
         </div>

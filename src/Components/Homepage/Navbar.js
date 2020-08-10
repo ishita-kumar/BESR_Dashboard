@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import "./Navbar.css";
+import IULogo from "../../assets/images/iu.jpg" 
+
 
 export default class Navbar extends Component {
     render() {
@@ -8,7 +10,7 @@ export default class Navbar extends Component {
                 <section class="navigation ">
   <div class="nav-container">
     <div class="brand">
-      <a href="">Recover Monroe</a>
+      <a href="">Recover Monroe, IN</a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -27,12 +29,15 @@ export default class Navbar extends Component {
           <a href="#tab-es6">Resources</a>
         </li>
     
-      
+      <li className="mr-auto ">
+   
+               <img className="iconlogo" src={IULogo}></img>
+              </li>
       </ul>
     </nav>
+    
   </div>
 </section>
-
 
             </div>
         )

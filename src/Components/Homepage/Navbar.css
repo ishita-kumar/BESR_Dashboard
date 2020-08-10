@@ -2,6 +2,7 @@
 .navigation {
   height: 90px;
   background: #FFFFFF;
+  border-bottom:  1px solid #EA941A;
 }
 
 .brand {
@@ -30,6 +31,7 @@ top:25px;
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
+
 }
 
 nav {

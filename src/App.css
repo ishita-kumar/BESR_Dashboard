@@ -44,7 +44,7 @@ color: #504747;
 
 }
 .indicators{
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 margin-top:12px ;
 color: #005B94;
@@ -66,11 +66,11 @@ color: #504747;
 .iconlogo{
   content: '';
   display: block;
-  height: 40px;  /*height of icon */
-  width: 40px;  /*width of icon */
+  height: 60px;  /*height of icon */
+  width: 60px;  /*width of icon */
 }
 .maincomponent{
-  padding-Left: 180px;
+  padding-Left: 50px;
    padding-Top: 60px;
    /* padding-Bottom: 60px; */
 
@@ -80,7 +80,7 @@ color: #504747;
 font-family: Roboto;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 16px;
 /* line-height: 23px; */
 
 color: #504747;

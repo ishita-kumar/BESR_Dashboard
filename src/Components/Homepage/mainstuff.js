@@ -11,6 +11,9 @@ import ParticlesBg from "particles-bg";
 import Download from "./Downloadpdf";
 import SplitText from "react-pose-text";
 import IULogo from "../../assets/images/iu.jpg";
+import IBRC from "../../assets/images/IBRC.png";
+import BEDC from "../../assets/images/BEDC.png";
+
 const charPoses = {
   exit: { opacity: 0, y: 20 },
   enter: {
@@ -233,10 +236,10 @@ export default class mainstuff extends Component {
                   <span className="CTIL"> CTIL</span>
                 </div>
                 <div className="col-auto mb-3">
-                  <span className="CTIL"> IBRC</span>
+                <img className="iconlogo" src={IBRC}></img>
                 </div>
                 <div className="col-auto mb-3">
-                  <span className="CTIL"> BEDC</span>
+                <img className="iconlogo" src={BEDC}></img>
                 </div>
               </div>
             </h3>

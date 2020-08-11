@@ -7,7 +7,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <section class="navigation ">
-          <div class="nav-container">
+          <div class="nav-container ">
             <div class="brand">
               <a href="">Recover Monroe, IN</a>
             </div>
@@ -17,7 +17,7 @@ export default class Navbar extends Component {
                   <span></span>
                 </a>
               </div>
-              <ul class="nav-list">
+              <ul class="nav-list ">
                 <li>
                   <a href="#indicators">Indicators</a>
                 </li>
@@ -28,15 +28,26 @@ export default class Navbar extends Component {
                 <li>
                   <a href="#updates">Updates</a>
                 </li>
+                <li>
+                <a >   {" "}</a>
+                </li>
+                <li>
+                <a >   {" "}</a>
+                </li>
+                <li className="">
+                  <div style={{paddingTop:"10px",paddingBottom:"10px",paddingRight:"80px"}}>
+                  <img className="iconlogo" src={IULogo}></img>
+                  </div>
+                </li>
+          
                 {/* <li>
           <a href="#tab-es6">Resources</a>
         </li> */}
 
-                <li className="mr-auto ">
-                  <div style={{padding:"10px"}}></div>
-                  <img className="iconlogo" src={IULogo}></img>
-                </li>
               </ul>
+              <ul>
+              
+                </ul>
             </nav>
           </div>
         </section>

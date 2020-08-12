@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.721494f1.chunk.css",
-    "main.js": "/static/js/main.8ebe521b.chunk.js",
-    "main.js.map": "/static/js/main.8ebe521b.chunk.js.map",
+    "main.css": "/static/css/main.49284da0.chunk.css",
+    "main.js": "/static/js/main.54ce32bf.chunk.js",
+    "main.js.map": "/static/js/main.54ce32bf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d51f824c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d51f824c.js.map",
     "static/css/2.00939157.chunk.css": "/static/css/2.00939157.chunk.css",
-    "static/js/2.912949ac.chunk.js": "/static/js/2.912949ac.chunk.js",
-    "static/js/2.912949ac.chunk.js.map": "/static/js/2.912949ac.chunk.js.map",
+    "static/js/2.0c61a01e.chunk.js": "/static/js/2.0c61a01e.chunk.js",
+    "static/js/2.0c61a01e.chunk.js.map": "/static/js/2.0c61a01e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f8c30cf4dc144c214eeafd8819428945.js": "/precache-manifest.f8c30cf4dc144c214eeafd8819428945.js",
+    "precache-manifest.e17b9a55aa6d1fae88a1daf0dca2d53d.js": "/precache-manifest.e17b9a55aa6d1fae88a1daf0dca2d53d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.00939157.chunk.css.map": "/static/css/2.00939157.chunk.css.map",
-    "static/css/main.721494f1.chunk.css.map": "/static/css/main.721494f1.chunk.css.map",
-    "static/js/2.912949ac.chunk.js.LICENSE.txt": "/static/js/2.912949ac.chunk.js.LICENSE.txt",
+    "static/css/main.49284da0.chunk.css.map": "/static/css/main.49284da0.chunk.css.map",
+    "static/js/2.0c61a01e.chunk.js.LICENSE.txt": "/static/js/2.0c61a01e.chunk.js.LICENSE.txt",
+    "static/media/BEDC.png": "/static/media/BEDC.01ac64e9.png",
     "static/media/Community_Responsibility_Acknowledgement.pdf": "/static/media/Community_Responsibility_Acknowledgement.44ac5877.pdf",
+    "static/media/IBRC.png": "/static/media/IBRC.3a55d4cb.png",
     "static/media/banner2.png": "/static/media/banner2.08f74731.png",
     "static/media/infection.png": "/static/media/infection.db154eb2.png",
     "static/media/iu.jpg": "/static/media/iu.abc86889.jpg",
@@ -23,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.d51f824c.js",
     "static/css/2.00939157.chunk.css",
-    "static/js/2.912949ac.chunk.js",
-    "static/css/main.721494f1.chunk.css",
-    "static/js/main.8ebe521b.chunk.js"
+    "static/js/2.0c61a01e.chunk.js",
+    "static/css/main.49284da0.chunk.css",
+    "static/js/main.54ce32bf.chunk.js"
   ]
 }

@@ -46,8 +46,16 @@ color: #504747;
 .indicators{
   font-size: 16px;
   text-align: center;
+  margin-bottom: 0em;
+
 margin-top:12px ;
 color: #005B94;
+}
+.indicators-next{
+  font-size: 16px;
+  text-align: center;
+color: #005B94;
+
 }
 .indicatornumber{
 font-style: normal;

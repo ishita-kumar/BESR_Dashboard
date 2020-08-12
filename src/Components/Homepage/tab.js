@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#eee",
   },
   tabs:{
-    background: "#D9D9D9",
+    background: "#005B94",
     border: 0,
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(	0, 91, 148, .3)',
@@ -99,7 +99,7 @@ export default function SimpleTabs() {
     <Paper className={classes.root}>
       <AppBar position="">
         <Tabs value={value} className={classes.tabs} onChange={handleChange}  centered >
-        <Tab label="Employment and Mobility Data" {...a11yProps(0)} />
+        <Tab label="Employment and Mobility" {...a11yProps(0)} />
           <Tab label="Povert Insights" {...a11yProps(1)} ></Tab>
           <Tab label="Census Tracts" {...a11yProps(2)} />
           <Tab label="Map" {...a11yProps(3)} />
@@ -147,7 +147,7 @@ export default function SimpleTabs() {
           </div>
 
         </div>
-            
+            <h6>COVID Act now bridges data from multiple authoritative data sources - more useful than just state data</h6> <a href="https://docs.google.com/presentation/d/1XmKCBWYZr9VQKFAdWh_D7pkpGGM_oR9cPjj-UrNdMJQ/edit#slide=id.g875b45be96_0_301">See</a>
             </div>
       </TabPanel>
 

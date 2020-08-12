@@ -21,12 +21,12 @@ export default class aninumber extends Component {
                   class="col-lg-3 stats "
                   style={{ border: " 1px solid #D9D9D9" }}
                 >
-                  <i class="fa fa-code" aria-hidden="true"></i>
+                
                   <h5 className="indicators">Rate of Unemployment</h5>
-                  <h5 className="indicators">June 2020</h5>
+                  <h5 className="indicators-next">in June 2020</h5>
                   <hr className="hrred"></hr>
                   <h3 className="indicatornumber">
-                 
+                  <h6 className="indicators-next">From May 2020 to June 2020</h6>
                     <AnimatedNumber
                       value={this.state.value2}
                       formatValue={this.formatValue}
@@ -41,9 +41,10 @@ export default class aninumber extends Component {
                   style={{ border: " 1px solid #D9D9D9" }}
                 >
                   <i class="fa fa-check" aria-hidden="true"></i>
-                  <h5 className="indicators">Employment change</h5>
-                   <h5 className="indicators">from 2019 to 2020</h5>
+                  <h5 className="indicators">Employment Change</h5>
+                   <h5 className="indicators-next">from June 2019 to 2020</h5>
                   <hr className="hrgreen"></hr>
+                  <h6 className="indicators-next">June 2020 witnesses increase since the last June</h6>
                   <h3 className="indicatornumber">
                     -
                     <AnimatedNumber
@@ -62,7 +63,7 @@ export default class aninumber extends Component {
                   <h5 className="indicators">
                     Percent Employment
                   </h5>
-                  <h5 className="indicators">change from 2019</h5>
+                  <h5 className="indicators-next">Change from 2019</h5>
                   <hr className="hryellow"></hr>
                   <h3 className="indicatornumber">
                     -
@@ -83,10 +84,11 @@ export default class aninumber extends Component {
                   <h5 className="indicators">
                     Percent Unemployment
                   </h5>
-                  <h5 className="indicators">Change from 2019
+                  <h5 className="indicators-next">Change from 2019
                   </h5>
                   <hr className="hrpurple"></hr>
                   <h3 className="indicatornumber">
+                    
                     <AnimatedNumber
                       value={this.state.value3}
                       formatValue={this.formatValue}

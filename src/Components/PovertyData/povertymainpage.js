@@ -29,7 +29,7 @@ class povertyMainpage extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="chart-container"  style={{"color":"black"}}>
-                  <h2 style={{ textAlign: "center" }}>Povert by Age</h2>
+                  <h2 style={{ textAlign: "center" }}>Poverty by Age</h2>
                   <Agedata></Agedata>
                   <div>
 
@@ -90,7 +90,7 @@ class povertyMainpage extends Component {
               </div>
               <div className="col-md-6">
                 <div className="chart-container" style={{"color":"black"}}>
-                  <h2 style={{ textAlign: "center" }}>Povert by Education</h2>
+                  <h2 style={{ textAlign: "center" }}>Poverty by Education</h2>
                   <Education></Education>
                 </div>
               </div>

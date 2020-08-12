@@ -11041,7 +11041,7 @@ class Map extends React.Component {
                             <div id="" >
                                 <div className="mapbox-container">
                                     <div id="state-legend" class="legend">
-                                        <h4 style={{ "color": "black" }}>Number of Claims</h4>
+                                        <h4 style={{ "color": "black" }}>Number of Unemployment Claims</h4>
                                         {/* <div><span style={{ "background-color": "#ffffcc" }}></span>25,000,000</div> */}
                                         <div><span style={{ "background-color": "#ffeda0" }}></span>0-30</div>
                                         <div><span style={{ "background-color": "#fed976" }}></span>31-60</div>

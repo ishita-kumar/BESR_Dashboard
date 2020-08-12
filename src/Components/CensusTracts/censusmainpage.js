@@ -192,9 +192,8 @@ class povertyMainpage extends Component {
             <div class="row">
               <div class="col-md-12">
                 <div class="content">
-                  {/* <h2>Each census tract In monroe county</h2>
-                  <p>Check the Census tract you live in: <a href="https://www.census.gov/geographies/reference-maps/2010/geo/2010-census-tract-maps.html">here</a></p>
-                  */}
+                  <p>Find your Census Tract: <a href="https://www.census.gov/geographies/reference-maps/2010/geo/2010-census-tract-maps.html">here</a></p>
+                 
                   <div class="form-group"> 
 
 {/* <label for="exampleFormControlSelect1">Select Census</label> */}

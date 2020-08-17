@@ -25,6 +25,7 @@
     "react-google-charts": "^3.0.15",
     "react-horizontal-timeline": "^1.5.3",
     "react-iframe": "^1.8.0",
+    "react-js-banner": "^0.5.2",
     "react-leaflet": "^2.7.0",
     "react-leaflet-choropleth": "^2.0.1",
     "react-mapbox-gl": "^4.8.6",
@@ -38,6 +39,7 @@
     "react-simple-maps": "^2.0.0",
     "react-text-loop": "^2.3.0",
     "react-to-pdf": "0.0.11",
+    "reactjs-popup": "^1.5.0",
     "recharts": "^1.8.5",
     "tableau-react": "^1.2.2"
   },

@@ -19,14 +19,14 @@ export default class aninumber extends Component {
               <div class="row" style={{ backgroundColor: "white" }}>
                 <div
                   class="col-lg-3 stats "
-                  style={{ border: " 1px solid #D9D9D9" }}
+                  style={{ border: " 1px solid #52575d" }}
                 >
                 
-                  <h5 className="indicators">Rate of Unemployment</h5>
-                  <h5 className="indicators-next">in June 2020</h5>
+                  <h5 className="indicators">Unemployment Rate</h5>
+                  <h5 className="indicators-next"> May 2020 to June 2020</h5>
                   <hr className="hrred"></hr>
                   <h3 className="indicatornumber">
-                  <h6 className="indicators-next">From May 2020 to June 2020</h6>
+                  {/* <h6 className="indicators-next">From May 2020 to June 2020</h6> */}
                     <AnimatedNumber
                       value={this.state.value2}
                       formatValue={this.formatValue}
@@ -38,13 +38,13 @@ export default class aninumber extends Component {
 
                 <div
                   class="col-lg-3 stats"
-                  style={{ border: " 1px solid #D9D9D9" }}
+                  style={{ border: " 1px solid #52575d" }}
                 >
                   <i class="fa fa-check" aria-hidden="true"></i>
                   <h5 className="indicators">Employment Change</h5>
-                   <h5 className="indicators-next">from June 2019 to 2020</h5>
+                   <h5 className="indicators-next"> June 2019 to June 2020</h5>
                   <hr className="hrgreen"></hr>
-                  <h6 className="indicators-next">June 2020 witnesses increase since the last June</h6>
+                  {/* <h6 className="indicators-next">June 2020 witnesses increase since the last June</h6> */}
                   <h3 className="indicatornumber">
                     -
                     <AnimatedNumber
@@ -56,7 +56,7 @@ export default class aninumber extends Component {
 
                 <div
                   class="col-lg-3 stats"
-                  style={{ border: " 1px solid #D9D9D9" }}
+                  style={{ border: " 1px solid #52575d" }}
                 >
                   <i class="fa fa-user" aria-hidden="true"></i>
 
@@ -78,7 +78,7 @@ export default class aninumber extends Component {
 
                 <div
                   class="col-lg-3 stats"
-                  style={{ border: " 1px solid #D9D9D9" }}
+                  style={{ border: " 1px solid #52575d" }}
                 >
                   <i class="fa fa-coffee" aria-hidden="true"></i>
                   <h5 className="indicators">

@@ -131,18 +131,19 @@ export default function SimpleTabs() {
 
       <TabPanel value={value} index={4}>
       <div className="container-fluid" style={{ alignContent: "center" }}>
-        <div className="row">
-          <div className="col-3">
+        <div className="row" style={{backgroundColor:"#fff"}}>
+          <div className="col-5" >
           <Iframe
                 url="https://covidactnow.org/embed/us/county/18105"
                 title="CoVid Act Now"
-                width="350"
+                width="450"
                 height="370"
                 frameBorder="0"
                 scrolling="no"
+                backgroundColor="black"
               ></Iframe>
           </div>
-          <div className="col-9">
+          <div className="col-7">
           <img style={{width: "100%", height: "auto"}} src={banner} />
           </div>
 

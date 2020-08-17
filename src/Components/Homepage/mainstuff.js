@@ -10,6 +10,7 @@ import Tableau from "./TableauReact";
 import ParticlesBg from "particles-bg";
 import Download from "./Downloadpdf";
 import SplitText from "react-pose-text";
+import Desktop from "../../assets/images/desktoplogo.png";
 import IULogo from "../../assets/images/iu.jpg";
 import IBRC from "../../assets/images/IBRC.png";
 import BEDC from "../../assets/images/BEDC.png";
@@ -30,15 +31,35 @@ export default class mainstuff extends Component {
         <div>
           <Navbar></Navbar>
         </div>
+        <div class="jumbotron jumbotron-fluid" id="mobileonly">
+          <div class="container cola">
+            <h6>
+              <svg
+                width="2em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-laptop"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z"
+                />
+                <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z" />
+              </svg>
+           This WebApp is not available on Mobile, please switch to desktop.
+            </h6>
+          </div>
+        </div>
         <div style={{ backgroundColor: "#F0F0F0" }}>
+          <div className="container-fluid maincomponent">
+            <h1 className="heading">MAJOR INDICATORS</h1>
+            <h3 className="subheading">
+              Summary of the economic impact of COVID-19, Monroe County, IN
+            </h3>
+          </div>
           <section id="indicators">
-            <div className="container-fluid maincomponent">
-              <h1 className="heading">MAJOR INDICATORS</h1>
-              <h3 className="subheading">
-                Summary of the economic impact of COVID-19, Monroe County, IN
-              </h3>
-            </div>
-
             <Stats></Stats>
           </section>
         </div>
@@ -47,6 +68,7 @@ export default class mainstuff extends Component {
           <section class="" id="statistics">
             <div className="container-fluid maincomponent">
               <h1 className="heading">STATISTICS</h1>
+
               <h3 className="subheading">
                 View a breakdown of the data according to different categories
               </h3>
@@ -72,9 +94,26 @@ export default class mainstuff extends Component {
             <Tableau></Tableau>
           </section>
         </div> */}
+
+        {/* <section class="" id="mobileonly">
+          <div className="container-fluid maincomponent">
+            <div className="row1" style={{ textAlign: "center" }}>
+              <div className="coli-md-3">
+                <img className="desktop" src={Desktop}></img>
+              </div>
+            </div>
+            <h3 className="subheading">
+              <hr className="hrgreen"></hr>
+              Open this on a Desktop or laptop for more!
+            </h3>
+          </div>
+
+          <div class="container-fluid " style={{ padding: "60px" }}></div>
+        </section> */}
+
         <section id="updates">
-          <div style={{ backgroundColor: "#F0F0F0",paddingBottom:"60px" }}>
-            <div className="container-fluid maincomponent" >
+          <div style={{ backgroundColor: "#F0F0F0", paddingBottom: "60px" }}>
+            <div className="container-fluid maincomponent">
               <h1 className="heading">RECOVERY UPDATES</h1>
               <h3 className="subheading">Our intepretation of the data.</h3>
             </div>
@@ -217,7 +256,7 @@ export default class mainstuff extends Component {
         </div> */}
 
         <div id="contact" class="footer" style={{ backgroundColor: "#FFFFFF" }}>
-          <div class="container">
+          <div class="container-fluid">
             <p class="footer-left">
               {/* <Download></Download>                    <br /> */}
               <h1 className="heading">ACKNOWLEDGEMENTS </h1>
@@ -236,15 +275,14 @@ export default class mainstuff extends Component {
                   <span className="CTIL"> CTIL</span>
                 </div>
                 <div className="col-auto mb-3">
-                <img className="iconlogo" src={IBRC}></img>
+                  <img className="iconlogo" src={IBRC}></img>
                 </div>
                 <div className="col-auto mb-3">
-                <img className="iconlogo" src={BEDC}></img>
+                  <img className="iconlogo" src={BEDC}></img>
                 </div>
               </div>
             </h3>
-            <h3 class="footer-centered" >
-              
+            <h3 class="footer-centered">
               <br />
             </h3>
 

@@ -12,11 +12,7 @@ export default class Navbar extends Component {
               <a href="">Recover Monroe, IN</a>
             </div>
             <nav>
-              <div class="nav-mobile">
-                <a id="nav-toggle">
-                  <span></span>
-                </a>
-              </div>
+         
               <ul class="nav-list ">
                 <li>
                   <a href="#indicators">Indicators</a>

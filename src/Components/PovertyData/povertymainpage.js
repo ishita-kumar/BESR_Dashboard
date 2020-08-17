@@ -32,6 +32,7 @@ class povertyMainpage extends Component {
                   <h2 style={{ textAlign: "center" }}>Poverty by Age</h2>
                   <Agedata></Agedata>
                   <div>
+                    <h6>An Age wise percentage comparision of persons below perverty level; Monroe VS Indiana in 2018</h6>
 
                   </div>
 
@@ -42,6 +43,8 @@ class povertyMainpage extends Component {
 
                   <h2 style={{ textAlign: "center" }}>Poverty by Work Experience</h2>
                   <WorkExperience></WorkExperience>
+                  <h6>  Comparing the percentage number of people below poverty level with respect to their Work Experience.</h6>
+
                 </div>
               </div>
             </div>
@@ -67,6 +70,8 @@ class povertyMainpage extends Component {
                   <h2 style={{ textAlign: "center" }}>By Race</h2>
                   <RaceData></RaceData>
                 </div>
+                <h6>  Comparing the percentage number of people below poverty level with respect to their Race.</h6>
+
               </div>
 
 
@@ -83,6 +88,8 @@ class povertyMainpage extends Component {
                   {/* <Gender></Gender> */}
                   <Employment></Employment>
                   <div>
+                  <h6>A distrubuted analysis of perventage number of people below poverty level based on Employment and Gender</h6>
+
 
                   </div>
 
@@ -92,6 +99,9 @@ class povertyMainpage extends Component {
                 <div className="chart-container" style={{"color":"black"}}>
                   <h2 style={{ textAlign: "center" }}>Poverty by Education</h2>
                   <Education></Education>
+                </div>
+                <div>
+                <h6 style={{"color":"black"}}>  Comparing the percentage number of people below poverty level with respect to their Level of Education.</h6>
                 </div>
               </div>
             </div>

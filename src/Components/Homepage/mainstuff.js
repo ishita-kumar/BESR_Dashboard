@@ -13,6 +13,8 @@ import SplitText from "react-pose-text";
 import Desktop from "../../assets/images/desktoplogo.png";
 import IULogo from "../../assets/images/iu.jpg";
 import IBRC from "../../assets/images/IBRC.png";
+import August from "../../assets/images/Aug.pdf";
+import July from "../../assets/images/july.pdf";
 import BEDC from "../../assets/images/BEDC.png";
 
 const charPoses = {
@@ -208,9 +210,9 @@ export default class mainstuff extends Component {
                     <div class="card-body">
                       
                       <div class="card-text" style={{ textAlign: "justify" }}>
-                      <p>Newsletter 01 - 06/25/2020</p>
-                      <p>Newsletter 02 - 06/30/2020</p>
-                      <p>Newsletter 03 - 07/07/2020</p>
+                      <p><a href={August}>Newsletter 01 - 08/05/2020</a></p>
+                      
+                      <p><a href={July}>Newsletter 02 - 07/05/2020</a></p>
                       
                       </div>
                     </div>

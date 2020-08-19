@@ -5,7 +5,7 @@ export default class aninumber extends Component {
   state = {
     value: 591,
     value1: 0.9,
-    value2: 9.0,
+    value2: 15.4,
     value3: 151.55,
   };
 

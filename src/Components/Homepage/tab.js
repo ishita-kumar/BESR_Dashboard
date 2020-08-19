@@ -100,7 +100,7 @@ export default function SimpleTabs() {
       <AppBar position="">
         <Tabs value={value} className={classes.tabs} onChange={handleChange}  centered >
         <Tab label="Employment and Mobility" {...a11yProps(0)} />
-          <Tab label="Povert Insights" {...a11yProps(1)} ></Tab>
+          <Tab label="Poverty Insights" {...a11yProps(1)} ></Tab>
           <Tab label="Census Tracts" {...a11yProps(2)} />
           <Tab label="Map" {...a11yProps(3)} />
           

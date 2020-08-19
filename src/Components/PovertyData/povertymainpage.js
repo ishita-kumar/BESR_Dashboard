@@ -32,7 +32,7 @@ class povertyMainpage extends Component {
                   <h2 style={{ textAlign: "center" }}>Poverty by Age</h2>
                   <Agedata></Agedata>
                   <div>
-                    <h6>An Age wise percentage comparision of persons below perverty level; Monroe VS Indiana in 2018</h6>
+                    <h6>An Age wise percentage comparision of persons below Poverty level; Monroe VS Indiana in 2018</h6>
 
                   </div>
 
@@ -88,7 +88,7 @@ class povertyMainpage extends Component {
                   {/* <Gender></Gender> */}
                   <Employment></Employment>
                   <div>
-                  <h6>A distrubuted analysis of perventage number of people below poverty level based on Employment and Gender</h6>
+                  <h6>A distrubuted analysis of percentage number of people below poverty level based on Employment and Gender</h6>
 
 
                   </div>

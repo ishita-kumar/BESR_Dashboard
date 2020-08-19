@@ -62,7 +62,7 @@ const data = [
 // )
 
 const getIntroOfPage = (label) => {
-  if (label === ">5") {
+  if (label === "<5") {
     return "Indiana State: 81,505,Monroe County: 1,119";
   }
   if (label === "5-17") {

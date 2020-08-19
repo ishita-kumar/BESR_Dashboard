@@ -120,12 +120,12 @@ export default class mainstuff extends Component {
 
             <div class="container-fluid ">
               <div class="row maincomponent">
-                <div class="col-auto mb-3">
+                {/* <div class="col-auto mb-3"> */}
+                <div className="col-sm-3 col-md-9">
                   <div
                     class="card mb-3"
                     style={{
-                      width: "20%",
-                      height: "auto",
+                     
                     }}
                   >
                     <div
@@ -183,6 +183,35 @@ export default class mainstuff extends Component {
                         <p></p>
                         These and other metrics can all be viewed within this
                         dashboard - we hope you find it useful!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-3 col-md-3">
+                  <div
+                    class="card"
+                    style={{
+                     
+                    }}
+                  >
+                    <div
+                      class="card-header"
+                      style={{
+                        backgroundColor: "#EA941A",
+                        textAlign: "center",
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                    >
+                    Explore Newsletter
+                    </div>
+                    <div class="card-body">
+                      
+                      <div class="card-text" style={{ textAlign: "justify" }}>
+                      <p>Newsletter 01 - 06/25/2020</p>
+                      <p>Newsletter 02 - 06/30/2020</p>
+                      <p>Newsletter 03 - 07/07/2020</p>
+                      
                       </div>
                     </div>
                   </div>
@@ -262,7 +291,7 @@ export default class mainstuff extends Component {
               <h1 className="heading">ACKNOWLEDGEMENTS </h1>
               Copyright © 2020,
               <a href="https://ctil.iu.edu/" style={{ color: "black" }}>
-                Crisis Technologies Innovation Lab, Indiana University
+              The Trustees of Indiana University
               </a>
             </p>
 

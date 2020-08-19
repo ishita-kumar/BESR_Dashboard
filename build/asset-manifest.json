@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.be92fefc.chunk.css",
-    "main.js": "/static/js/main.2929cb22.chunk.js",
-    "main.js.map": "/static/js/main.2929cb22.chunk.js.map",
+    "main.css": "/static/css/main.f2a1e30b.chunk.css",
+    "main.js": "/static/js/main.0c861b97.chunk.js",
+    "main.js.map": "/static/js/main.0c861b97.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d51f824c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d51f824c.js.map",
     "static/css/2.00939157.chunk.css": "/static/css/2.00939157.chunk.css",
-    "static/js/2.0c61a01e.chunk.js": "/static/js/2.0c61a01e.chunk.js",
-    "static/js/2.0c61a01e.chunk.js.map": "/static/js/2.0c61a01e.chunk.js.map",
+    "static/js/2.2ba075a4.chunk.js": "/static/js/2.2ba075a4.chunk.js",
+    "static/js/2.2ba075a4.chunk.js.map": "/static/js/2.2ba075a4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f9555cb252f83d4117c132809b92c235.js": "/precache-manifest.f9555cb252f83d4117c132809b92c235.js",
+    "precache-manifest.4197729178415e0559c6c59c85ebf2fc.js": "/precache-manifest.4197729178415e0559c6c59c85ebf2fc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.00939157.chunk.css.map": "/static/css/2.00939157.chunk.css.map",
-    "static/css/main.be92fefc.chunk.css.map": "/static/css/main.be92fefc.chunk.css.map",
-    "static/js/2.0c61a01e.chunk.js.LICENSE.txt": "/static/js/2.0c61a01e.chunk.js.LICENSE.txt",
+    "static/css/main.f2a1e30b.chunk.css.map": "/static/css/main.f2a1e30b.chunk.css.map",
+    "static/js/2.2ba075a4.chunk.js.LICENSE.txt": "/static/js/2.2ba075a4.chunk.js.LICENSE.txt",
     "static/media/BEDC.png": "/static/media/BEDC.01ac64e9.png",
     "static/media/Community_Responsibility_Acknowledgement.pdf": "/static/media/Community_Responsibility_Acknowledgement.44ac5877.pdf",
     "static/media/IBRC.png": "/static/media/IBRC.3a55d4cb.png",
     "static/media/banner2.png": "/static/media/banner2.08f74731.png",
+    "static/media/desktoplogo.png": "/static/media/desktoplogo.8136d6f6.png",
     "static/media/infection.png": "/static/media/infection.db154eb2.png",
     "static/media/iu.jpg": "/static/media/iu.abc86889.jpg",
     "static/media/notifications.css": "/static/media/notification.c0d3c94c.eot"
@@ -25,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.d51f824c.js",
     "static/css/2.00939157.chunk.css",
-    "static/js/2.0c61a01e.chunk.js",
-    "static/css/main.be92fefc.chunk.css",
-    "static/js/main.2929cb22.chunk.js"
+    "static/js/2.2ba075a4.chunk.js",
+    "static/css/main.f2a1e30b.chunk.css",
+    "static/js/main.0c861b97.chunk.js"
   ]
 }

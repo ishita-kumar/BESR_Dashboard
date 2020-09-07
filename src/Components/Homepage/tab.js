@@ -103,16 +103,15 @@ export default function SimpleTabs() {
           <Tab label="Poverty Insights" {...a11yProps(1)} ></Tab>
           <Tab label="Census Tracts" {...a11yProps(2)} />
           <Tab label="Map" {...a11yProps(3)} />
-          
           <Tab label="COVID Data" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
         <div className="container" style={{display: "flex",
   alignItems: "left"}}>
-        <button className='button_no_dec'
+        {/* <button className='button_no_dec'
           onClick={createNotification('info')}><InfoIcon></InfoIcon>
-        </button>
+        </button> */}
         <Tableau></Tableau>
         </div>
       </TabPanel>

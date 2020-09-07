@@ -62,6 +62,7 @@ export default class mainstuff extends Component {
             </h3>
           </div>
           <section id="indicators">
+          
             <Stats></Stats>
           </section>
         </div>

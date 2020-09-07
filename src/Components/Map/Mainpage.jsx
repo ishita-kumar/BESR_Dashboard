@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import UsaMap from "../Components/UsaMap";
 import MyMapComponent from "./UsaMap";
-
 import Chart from "../Chart";
 import Tabu from "../tabs"
 import DynamicSelect from '../DynamicSelect';
@@ -15,7 +14,6 @@ class Mainpage extends Component {
           <section className="charts">
             <div className="container" style={{width:"relative"}}>
               <MyMapComponent ></MyMapComponent>
-
             </div>
           </section>
         </div>

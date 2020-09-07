@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AnimatedNumber from "animated-number-react";
+import InfoIcon from '@material-ui/icons/Info';
 
 export default class aninumber extends Component {
   state = {
@@ -17,16 +18,19 @@ export default class aninumber extends Component {
           <div class="container-fluid">
             <div class="container" style={{ padding: "40px" }}>
               <div class="row" style={{ backgroundColor: "white" }}>
+                
                 <div
                   class="col-lg-3 stats "
                   style={{ border: " 1px solid #52575d" }}
                 >
-                
-                  <h5 className="indicators">Unemployment Rate</h5>
+               
+                  <h5 className="indicators">Unemployment Rate  <InfoIcon style={{floar:"right"}}></InfoIcon></h5>
+                  
                   <h5 className="indicators-next"> May 2020 to June 2020</h5>
                   <hr className="hrred"></hr>
                   <h3 className="indicatornumber">
                   {/* <h6 className="indicators-next">From May 2020 to June 2020</h6> */}
+                 
                     <AnimatedNumber
                       value={this.state.value2}
                       formatValue={this.formatValue}

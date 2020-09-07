@@ -4,6 +4,7 @@ import Agedata from "./agepeople"
 import Employment from "./employmentdata"
 import WorkExperience from "./workexperience"
 import Education from "./Education"
+
 import Median from "./medianstuff"
 import Pdf from "react-to-pdf";
 import Gender from "./genderdata"
